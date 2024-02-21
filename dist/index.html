@@ -13,36 +13,107 @@
 
   <body class="font-main">
 
-    <nav class="fixed w-full top-0 bg-white py-4 shadow z-20">
+    <nav class="fixed w-full top-0 bg-stone-900 text py-4 shadow z-20">
       <div class="container px-4 mx-auto flex items-center justify-between">
-        <a href="/" class="text-gray-800 font-bold">Ewa Pobłocka</a>
-        <div class="space-x-5 text-sm font-light">
-          <a href="#services">Services</a>
-          <a href="#use-case">Use cases</a>
-          <a href="#pricing">Pricing</a>
-          <a href="#blog">Blog</a>
-          <a href="#contact">Contact us</a>
+        <a href="/" class="text-xl font-bold font-heading text-primary-200">Ewa Pobłocka</a>
+        <div class="space-x-5 text-sm font-light text-slate-100">
+          <a href="#about">O artystce</a>
+          <a href="#">Galeria</a>
+          <a href="#">Dyskografia</a>
+          <a href="#">Kontakt</a>
         </div>
       </div>
     </nav>
 
-    <header class="bg-top py-24 md:py-0 md:h-screen md:max-h-[800px] flex items-center text-center md:text-left">
-      <div class="lg:container px-4 mx-auto md:grid grid-cols-5 items-center">
-        <div class="col-span-2">
-          <span class="inline-block py-2 px-3 mb-3 text-blue-600 text-sm bg-white rounded-lg">Welcome to <strong>ChatCraft</strong></span>
-          <h1 class="text-4xl leading-[3rem] font-semibold font-heading">Your Personalized AI Chatbot Solution</h1>
-          <p class="mt-4 leading-8">At ChatCraft, we <strong>breathe life into your data</strong>. Leveraging the power of OpenAI's sophisticated GPT model, we deliver unique, fully customized chatbot solutions that understand your business, your customers, and your needs.</p>
-          <button class="js-contact-btn py-3 px-5 mt-4 text-white border-2 border-blue-700 bg-blue-700 rounded-lg hover:bg-blue-900 transition duration-200">Contact us</button>
-          <a href="https://calendly.com/chatcraft/introductory-call" target="_blank" class="py-3 px-5 mt-4 text-blue-800 border-2 border-blue-700 rounded-lg hover:border-blue-900 hover:text-blue-900 transition duration-200">Schedule demo</a>
-        </div>
-        <!-- <img class="w-full col-span-3" src="assets/imgs/header.svg" alt="Header"> -->                 
+    <header class="h-screen flex items-center text-center md:text-left" style="background-image: url('assets/imgs/header.jpg'); background-position: right;">
+      <div class="container px-4 mx-auto space-y-6">
+        <h1 class="text-8xl font-semibold font-heading text-primary-200">Ewa Pobłocka</h1>
+        <p class="leading-8 text-4xl text-stone-300">Pianistka, artystka.</p>
+        <a href="https://calendly.com/chatcraft/introductory-call" target="_blank" class="inline-block py-3 px-5 text-stone-800 border-2 border-primary-500 bg-primary-500 rounded-lg hover:text-white hover:bg-transparent transition duration-200">O artystce</a>             
       </div>
     </header>
 
-    <section class="relative py-20" id="services">
-      <div class="container px-4 mx-auto">
-        <h2 class="mb-4 text-2xl md:text-3xl font-semibold text-center">Our services</h2>
-        <p class="max-w-3xl mx-auto leading-7 text-center">At ChatCraft, our services are designed to ensure you have the best AI chatbot suited for your business. We believe in creating solutions that are uniquely tailored for each business. We don't just create chatbots; we customize them to your business's specific needs - both client facing and internal. Welcome to the future of customer interaction with ChatCraft.</p>
+    <section id="about">
+      <div class="md:grid md:grid-cols-2">
+        <img class="p-10 md:p-0" src="assets/imgs/o-artystce.jpg" alt="Ewa Pobłocka">
+        <div class="flex flex-col justify-center p-4 md:p-10">
+          <h2 class="mb-6 text-5xl text-primary-500 font-heading">O Artystce</h2>
+          <p class="text-lg"><strong class="text-stone-900">Laureatka X Międzynarodowego Konkursu Pianistycznego im. Fryderyka Chopina</strong> – nasza bohaterka to nie tylko zdobywczyni prestiżowego tytułu, ale także artystka uhonorowana nagrodą Polskiego Radia za najlepsze wykonanie mazurków Chopina. Absolwentka Państwowej Wyższej Szkoły Muzycznej w Gdańsku, kontynuowała swoje kształcenie w Hamburgu. Inspirację czerpała z konsultacji z największymi mistrzami, takimi jak Jadwiga Sukiennicka, Rudolf Kerer, Tatiana Nikołajewa, czy Martha Argerich.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="awards">
+      <div class="md:grid md:grid-cols-2">
+        <div class="flex flex-col justify-center p-4 md:p-10">
+          <h2 class="mb-6 text-5xl text-primary-500 font-heading">Nagrody i Osiągnięcia</h2>
+          <p class="text-lg">
+            <strong class="text-stone-900">Międzynarodowy sukces</strong> – od wczesnych lat swojej kariery zdobywczyni licznych nagród, w tym pierwszej nagrody na Międzynarodowym Konkursie im. G. Viottiego oraz złotego medalu na Międzynarodowym Festiwalu Młodych Laureatów. Jej dorobek to ponad 50 płyt dla czołowych wydawnictw, w tym Deutsche Grammophon i Polskie Nagrania „Muza”.
+          </p>
+          <p class="mt-2 text-lg">Artystka, wystąpiła niemal we wszystkich krajach Europy, Ameryk, Azji i Australii. Uprawia również muzykę kameralną, dokonując licznych prawykonań utworów polskich kompozytorów współczesnych.</p>
+        </div>
+        <img class="p-10 md:p-0" src="assets/imgs/nagrody.jpg" alt="Ewa Pobłocka">
+      </div>
+    </section>
+
+    <section class="py-20 bg-primary-100" id="">
+      <div class="container mx-auto p-10 bg-white">
+          <h2 class="mb-6 text-5xl text-primary-500 font-heading">Dyskografia</h2>
+          <p class="text-lg">
+            <strong class="text-stone-900">Bogata dyskografia</strong> – Wśród jej nagrań znajdują się dzieła takich kompozytorów jak Bach, Chopin, Panufnik, Lutosławski, Szymański, Mykietyn. Jako pierwsza polska pianistka od czasów Wandy Landowskiej nagrała oba tomy "Das Wohltemperierte Klavier" Bacha.
+          </p>
+        <div class="grid grid-cols-4 md:grid-cols-6 gap-5 pt-10">
+          <img src="http://www.ewapoblocka.com/media/js/kcfinder/upload/images/Pobłocka%20%20Pasiecznik%20Moniuszko%20pieśni%202022.jpg">
+          <img src="http://www.ewapoblocka.com/media/js/kcfinder/upload/images/dyskografia1/2018(NIFC).jpg">
+          <img src="http://www.ewapoblocka.com/media/js/kcfinder/upload/images/dyskografia1/2017(NIFC).jpg">
+          <img src="http://www.ewapoblocka.com/media/js/kcfinder/upload/images/2015%20NIFC.jpg">
+          <img src="http://www.ewapoblocka.com/media/js/kcfinder/upload/images/dyskografia1/IMG_0010.jpg">
+          <img src="http://www.ewapoblocka.com/media/js/kcfinder/upload/images/dyskografia1/IMG_0003_www.jpg">
+          <img src="http://www.ewapoblocka.com/media/js/kcfinder/upload/images/Pobłocka%20%20Pasiecznik%20Moniuszko%20pieśni%202022.jpg">
+          <img src="http://www.ewapoblocka.com/media/js/kcfinder/upload/images/dyskografia1/2018(NIFC).jpg">
+          <img src="http://www.ewapoblocka.com/media/js/kcfinder/upload/images/dyskografia1/2017(NIFC).jpg">
+          <img src="http://www.ewapoblocka.com/media/js/kcfinder/upload/images/2015%20NIFC.jpg">
+          <img src="http://www.ewapoblocka.com/media/js/kcfinder/upload/images/dyskografia1/IMG_0010.jpg">
+          <img src="http://www.ewapoblocka.com/media/js/kcfinder/upload/images/dyskografia1/IMG_0003_www.jpg">
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="md:grid md:grid-cols-2">
+        <img class="p-10 md:p-0" src="assets/imgs/nauka.jpg" alt="Ewa Pobłocka">
+        <div class="flex flex-col justify-center p-4 md:p-10">
+          <h2 class="mb-6 text-5xl text-primary-500 font-heading">Pedagogika i Publikacje</h2>
+          <p class="text-lg"><strong class="text-stone-900">Pasja do nauczania</strong> – Ceniona pedagog, prowadząca klasę fortepianu w Akademii Muzycznej w Bydgoszczy oraz kursy mistrzowskie na całym świecie. Autorka książki „Forte-piano” oraz prowadząca audycje radiowe poświęcone Bachowi.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-20 bg-primary-100" id="">
+      <div class="container mx-auto p-10 bg-white">
+        <h2 class="mb-6 text-5xl text-primary-500 font-heading">Kontakt</h2>
+        <p class="text-lg">
+          <strong class="text-stone-900">Zapraszamy do kontaktu</strong>  – Dla organizatorów koncertów, uczestników kursów mistrzowskich oraz wszystkich zainteresowanych współpracą lub uzyskaniem dodatkowych informacji.
+        </p>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-center pt-8">
+          <div>
+            <h3 class="font-bold font-heading text-xl">Marcin Gorayski</h3>
+            <p>Agencja Artystyczna enterMezzo</p>
+            <a href="mailto:entermezzo@op.pl" class="text-primary-500 hover:underline">entermezzo@op.pl</a><br>
+            <a href="tel:+48500659199" class="text-primary-500 hover:underline">tel. 500 659 199</a>
+          </div>
+          
+          <div>
+            <h3 class="font-bold font-heading text-xl">Michał Bruliński</h3>
+            <p>Osobisty sekretarz</p>
+            <a href="mailto:mw.brulinski@gmail.com" class="text-primary-500 hover:underline">mw.brulinski@gmail.com</a>
+          </div>
+          
+          <div>
+            <h3 class="font-bold font-heading text-xl">Kontakt dla studentów</h3>
+            <a href="mailto:prof.epoblocka@yahoo.com" class="text-primary-500 hover:underline">prof.epoblocka@yahoo.com</a>
+          </div>
+        </div>
         
       </div>
     </section>
@@ -51,14 +122,7 @@
     <footer class="py-6">
       <div class="container px-4 mx-auto">
         <div class="flex justify-between items-end text-sm">
-          <p>Copyright ©2023 ChatCraft. All Rights Reserved.</p>
-          <div class="space-x-8 font-light">
-            <a href="/">Home</a>
-            <a href="/privacy-policy.html">Privecy policy</a>
-            <a href="#">Blog</a>
-            <a href="https://calendly.com/chatcraft/introductory-call" target="_blank">Schedule demo</a>
-            <button class="js-contact-btn hover:underline">Contact us</button>
-          </div>
+          <p>Copyright ©2024 Ewa Pobłocka. All Rights Reserved.</p>
         </div>
       </div>
     </footer>
