@@ -1,0 +1,100 @@
+/* 
+    Write your custom CSS here and also abstract your Tailwind css using @apply
+*/
+
+
+.goldsssss {
+    color: red;
+}
+
+.bg-top {
+    background: linear-gradient(180deg, #E4ECFF 1.11%, rgba(234, 240, 255, 0) 103.22%);
+}
+
+.bg-bottom {
+    background: linear-gradient(0deg, #E4ECFF 1.11%, rgba(234, 240, 255, 0) 103.22%);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+h1, h2, h3 {
+    line-height: 2;
+}
+
+p, span, li {
+    font-weight: 300;
+    @apply text-gray-500;
+}
+
+a:hover {
+    @apply underline;
+}
+
+ul {
+    padding-top: 0.5rem;
+    padding-left: 2rem;
+}
+
+li {
+    list-style-type: disc;
+}
+
+input::placeholder {
+    font-weight: 300;
+}
+
+article h1 {
+    @apply mb-16;
+    @apply text-4xl;
+}
+
+article h2 {
+    @apply py-5;
+    @apply text-xl;
+}
+
+article p {
+    @apply mb-4;
+}
+
+#arm {
+    animation: arm 3s infinite ease;
+    transform-origin: bottom center  ;
+    transform-box: fill-box;
+}
+
+#msg1 {
+    animation: msg1 10s infinite ease;
+}
+
+#msg2 {
+    animation: msg1 12s infinite ease-in-out;
+}
+
+#msg3 {
+    animation: msg1 8s infinite ease;
+}
+
+#heart {
+    animation: msg1 5s infinite ease-in-out;
+}
+
+@keyframes arm {
+    0% {
+        transform: rotate(0deg);
+    } 
+    50% {
+        transform: rotate(-30deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    } 
+}
+
+@keyframes msg1 {
+    50% {
+        transform: translateY(-30px);
+    }
+}
