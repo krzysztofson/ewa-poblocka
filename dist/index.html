@@ -9,34 +9,48 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="./assets/js/main.js" defer="defer"></script>
+    <script src="
+    https://cdn.jsdelivr.net/npm/lightgallery.js@1.4.0/dist/js/lightgallery.min.js
+    "></script>
+    <link href="
+    https://cdn.jsdelivr.net/npm/lightgallery.js@1.4.0/dist/css/lightgallery.min.css
+    " rel="stylesheet">
   </head>
 
   <body class="font-main">
 
     <nav class="fixed w-full top-0 bg-stone-900 text py-4 shadow z-20">
-      <div class="container px-4 mx-auto flex items-center justify-between">
-        <a href="/" class="text-xl font-bold text-primary-200">Ewa Pobłocka</a>
-        <div class="space-x-5 text-sm font-light text-slate-100">
-          <a href="#about">O artystce</a>
-          <a href="#">Galeria</a>
-          <a href="#">Dyskografia</a>
-          <a href="#">Kontakt</a>
+      <div class="relative">
+        <div class="container px-4 mx-auto flex items-center justify-between">
+          <a href="/" class="flex-shrink-0 text-xl font-bold text-primary-200">Ewa Pobłocka</a>
+          <div class="js-nav hidden absolute top-11 w-full inset-x-0 mx-auto py-10 space-y-5 text-sm text-center font-light text-slate-100 lg:relative lg:block lg:top-0 lg:py-0 lg:bg-stone-900 lg:space-x-5 lg:text-right bg-stone-800 flex-col">
+            <a href="#about">Biografia</a>
+            <a href="#dyskografia">Dyskografia</a>
+            <a href="galeria.html">Galeria</a>
+            <a href="#bach">Bach</a>
+            <a href="z-mojej-szufladay.html">Z mojej szuflady</a>
+            <a href="#aktualnosci">Aktualności</a>
+            <a href="#kontakt">Kontakt</a>
+          </div>
+          <button class="cursor-pointer js-nav-btn lg:hidden">
+            <?xml version="1.0" encoding="utf-8"?>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M4 5C3.44772 5 3 5.44772 3 6C3 6.55228 3.44772 7 4 7H20C20.5523 7 21 6.55228 21 6C21 5.44772 20.5523 5 20 5H4ZM7 12C7 11.4477 7.44772 11 8 11H20C20.5523 11 21 11.4477 21 12C21 12.5523 20.5523 13 20 13H8C7.44772 13 7 12.5523 7 12ZM13 18C13 17.4477 13.4477 17 14 17H20C20.5523 17 21 17.4477 21 18C21 18.5523 20.5523 19 20 19H14C13.4477 19 13 18.5523 13 18Z" fill="#fff"/>
+            </svg>
+          </button>
         </div>
       </div>
     </nav>
 
     <header class="flex text-center h-screen lg:h-auto lg:aspect-video bg-cover bg-no-repeat bg-top" style="background-image: url('assets/imgs/header2.jpg');">
-      <div class="container px-4 mx-auto lg:first-line:space-y-6">
-        <h1 class="pt-24 text-2xl md:text-6xl lg:text-8xl font-semibold text-zinc-700">Ewa Pobłocka</h1>
-        <p class="leading-8 text-xl md:text-3xl lg:text-4xl text-zinc-500">Pianistka, artystka.</p>  
-      </div>
     </header>
 
     <section id="about">
       <div class="md:grid md:grid-cols-2">
         <img class="p-10 md:p-0" src="assets/imgs/o-artystce.jpg" alt="Ewa Pobłocka">
         <div class="flex flex-col justify-center p-4 md:p-10">
-          <h2 class="mb-6 text-5xl text-primary-500">O Artystce</h2>
+          <h2 class="mb-6 text-5xl text-primary-500">Biografia</h2>
           <p class="text-lg"><strong class="text-stone-900">Laureatka X Międzynarodowego Konkursu Pianistycznego im. Fryderyka Chopina</strong> – nasza bohaterka to nie tylko zdobywczyni prestiżowego tytułu, ale także artystka uhonorowana nagrodą Polskiego Radia za najlepsze wykonanie mazurków Chopina. Absolwentka Państwowej Wyższej Szkoły Muzycznej w Gdańsku, kontynuowała swoje kształcenie w Hamburgu. Inspirację czerpała z konsultacji z największymi mistrzami, takimi jak Jadwiga Sukiennicka, Rudolf Kerer, Tatiana Nikołajewa, czy Martha Argerich.</p>
         </div>
       </div>
@@ -44,23 +58,162 @@
 
     <section class="py-20 bg-primary-100" id="">
       <div class="container mx-auto p-10 bg-white">
-          <h2 class="mb-6 text-5xl text-primary-500">Dyskografia</h2>
-          <p class="text-lg">
-            <strong class="text-stone-900">Bogata dyskografia</strong> – Wśród jej nagrań znajdują się dzieła takich kompozytorów jak Bach, Chopin, Panufnik, Lutosławski, Szymański, Mykietyn. Jako pierwsza polska pianistka od czasów Wandy Landowskiej nagrała oba tomy "Das Wohltemperierte Klavier" Bacha.
-          </p>
-        <div class="grid grid-cols-4 md:grid-cols-6 gap-5 pt-10">
-          <img src="assets/imgs/dyskografia/1.jpg">
-          <img src="assets/imgs/dyskografia/1.jpg">
-          <img src="assets/imgs/dyskografia/1.jpg">
-          <img src="assets/imgs/dyskografia/1.jpg">
-          <img src="assets/imgs/dyskografia/1.jpg">
-          <img src="assets/imgs/dyskografia/1.jpg">
-          <img src="assets/imgs/dyskografia/1.jpg">
-          <img src="assets/imgs/dyskografia/1.jpg">
-          <img src="assets/imgs/dyskografia/1.jpg">
-          <img src="assets/imgs/dyskografia/1.jpg">
-          <img src="assets/imgs/dyskografia/1.jpg">
-          <img src="assets/imgs/dyskografia/1.jpg">
+        <h2 class="mb-6 text-5xl text-primary-500">Dyskografia</h2>
+        <p class="text-lg">
+          <strong class="text-stone-900">Bogata dyskografia</strong> – Wśród jej nagrań znajdują się dzieła takich kompozytorów jak Bach, Chopin, Panufnik, Lutosławski, Szymański, Mykietyn. Jako pierwsza polska pianistka od czasów Wandy Landowskiej nagrała oba tomy "Das Wohltemperierte Klavier" Bacha.
+        </p>
+        <div class="grid grid-cols-4 md:grid-cols-6 gap-5 pt-10" id="lightgallery">
+
+          <a href="assets/imgs/dyskografia/Pobłocka-Pasiecznik-Moniuszko-pieśni-2022.jpg">
+            <img alt="Pobłocka Pasiecznik Moniuszko Songs 2022" src="assets/imgs/dyskografia/Pobłocka-Pasiecznik-Moniuszko-pieśni-2022.jpg" />
+          </a>
+          <a href="assets/imgs/dyskografia/2018(NIFC).jpg">
+              <img alt="2018 NIFC" src="assets/imgs/dyskografia/2018(NIFC).jpg" />
+          </a>
+          <a href="assets/imgs/dyskografia/2017(NIFC).jpg">
+              <img alt="2017 NIFC" src="assets/imgs/dyskografia/2017(NIFC).jpg" />
+          </a>
+          <a href="assets/imgs/dyskografia/2015-NIFC.jpg">
+              <img alt="2015 NIFC" src="assets/imgs/dyskografia/2015-NIFC.jpg" />
+          </a>
+          <a href="assets/imgs/dyskografia/IMG_0010.jpg">
+              <img alt="IMG 0010" src="assets/imgs/dyskografia/IMG_0010.jpg" />
+          </a>
+          <a href="assets/imgs/dyskografia/IMG_0003_www.jpg">
+              <img alt="IMG 0003 WWW" src="assets/imgs/dyskografia/IMG_0003_www.jpg" />
+          </a>
+          <a href="assets/imgs/dyskografia/IMG_0005_www.jpg">
+              <img alt="IMG 0005 WWW" src="assets/imgs/dyskografia/IMG_0005_www.jpg" />
+          </a>
+          <a href="assets/imgs/dyskografia/2012-Nokturny-Canyon.png">
+              <img alt="2012 Nocturnes Canyon" src="assets/imgs/dyskografia/2012-Nokturny-Canyon.png" />
+          </a>
+          <a href="assets/imgs/dyskografia/2010-CDA.png">
+              <img alt="2010 CDA" src="assets/imgs/dyskografia/2010-CDA.png" />
+          </a>
+          <a href="assets/imgs/dyskografia/IMG_0004_www.jpg">
+              <img alt="IMG 0004 WWW" src="assets/imgs/dyskografia/IMG_0004_www.jpg" />
+          </a>
+          <a href="assets/imgs/dyskografia/2009-SACD.png">
+              <img alt="2009 SACD" src="assets/imgs/dyskografia/2009-SACD.png" />
+          </a>
+          <a href="assets/imgs/dyskografia/IMG_0013.jpg">
+              <img alt="IMG 0013" src="assets/imgs/dyskografia/IMG_0013.jpg" />
+          </a>
+          <a href="assets/imgs/dyskografia/IMG_0011.jpg">
+              <img alt="IMG 0011" src="assets/imgs/dyskografia/IMG_0011.jpg" />
+          </a>
+          <a href="assets/imgs/dyskografia/2008-JVC.jpg">
+              <img alt="2008 JVC" src="assets/imgs/dyskografia/2008-JVC.jpg" />
+          </a>
+          <a href="assets/imgs/dyskografia/2008-Brahms-JVC.png">
+              <img alt="2008 Brahms JVC" src="assets/imgs/dyskografia/2008-Brahms-JVC.png" />
+          </a>
+          <a href="assets/imgs/dyskografia/IMG_0023.jpg">
+              <img alt="IMG 0023" src="assets/imgs/dyskografia/IMG_0023.jpg" />
+          </a>
+          <a href="assets/imgs/dyskografia/IMG_0009.jpg">
+              <img alt="IMG 0009" src="assets/imgs/dyskografia/IMG_0009.jpg" />
+          </a>
+          <a href="assets/imgs/dyskografia/IMG_0018.jpg">
+            <img alt="Image 18" src="assets/imgs/dyskografia/IMG_0018.jpg" />
+          </a>
+          <a href="assets/imgs/dyskografia/IMG_0019.jpg">
+                  <img alt="Image 19" src="assets/imgs/dyskografia/IMG_0019.jpg" />
+          </a>
+          <a href="assets/imgs/dyskografia/IMG_0036.jpg">
+                  <img alt="Image 36" src="assets/imgs/dyskografia/IMG_0036.jpg" />
+          </a>
+          <a href="assets/imgs/dyskografia/IMG_0026.jpg">
+                  <img alt="Image 26" src="assets/imgs/dyskografia/IMG_0026.jpg" />
+          </a>
+          <a href="assets/imgs/dyskografia/IMG_0008.jpg">
+                  <img alt="Image 8" src="assets/imgs/dyskografia/IMG_0008.jpg" />
+          </a>
+          <a href="assets/imgs/dyskografia/IMG_0014.jpg">
+                  <img alt="Image 14" src="assets/imgs/dyskografia/IMG_0014.jpg" />
+          </a>
+          <a href="assets/imgs/dyskografia/2000-Faure-Nokturny.png">
+                  <img alt="2000 Faure Nokturny" src="assets/imgs/dyskografia/2000-Faure-Nokturny.png" />
+          </a>
+          <a href="assets/imgs/dyskografia/IMG_0028.jpg">
+                  <img alt="Image 28" src="assets/imgs/dyskografia/IMG_0028.jpg" />
+          </a>
+          <a href="assets/imgs/dyskografia/IMG_0024.jpg">
+                  <img alt="Image 24" src="assets/imgs/dyskografia/IMG_0024.jpg" />
+          </a>
+          <a href="assets/imgs/dyskografia/IMG_0017.jpg">
+                  <img alt="Image 17" src="assets/imgs/dyskografia/IMG_0017.jpg" />
+          </a>
+          <a href="assets/imgs/dyskografia/IMG_0037.jpg">
+                  <img alt="Image 37" src="assets/imgs/dyskografia/IMG_0037.jpg" />
+          </a>
+          <a href="assets/imgs/dyskografia/IMG_0032.jpg">
+                  <img alt="Image 32" src="assets/imgs/dyskografia/IMG_0032.jpg" />
+          </a>
+          <a href="assets/imgs/dyskografia/IMG_0005.jpg">
+                  <img alt="Image 5" src="assets/imgs/dyskografia/IMG_0005.jpg" />
+          </a>
+          <a href="assets/imgs/dyskografia/IMG_0020.jpg">
+                  <img alt="Image 20" src="assets/imgs/dyskografia/IMG_0020.jpg" />
+          </a>
+          <a href="assets/imgs/dyskografia/IMG_0033.jpg">
+                  <img alt="Image 33" src="assets/imgs/dyskografia/IMG_0033.jpg" />
+          </a>
+          <a href="assets/imgs/dyskografia/IMG_0027.jpg">
+                  <img alt="Image 27" src="assets/imgs/dyskografia/IMG_0027.jpg" />
+          </a>
+          <a href="assets/imgs/dyskografia/IMG_0025.jpg">
+                  <img alt="Image 25" src="assets/imgs/dyskografia/IMG_0025.jpg" />
+          </a>
+
+          <a href="assets/imgs/dyskografia/IMG_0022.jpg">
+            <img alt="Image description" src="assets/imgs/dyskografia/IMG_0022.jpg" />
+          </a>
+          <a href="assets/imgs/dyskografia/IMG_0015.jpg">
+                  <img alt="Image description" src="assets/imgs/dyskografia/IMG_0015.jpg" />
+          </a>
+          <a href="assets/imgs/dyskografia/IMG_0021.jpg">
+                  <img alt="Image description" src="assets/imgs/dyskografia/IMG_0021.jpg" />
+          </a>
+          <a href="assets/imgs/dyskografia/IMG_0029.jpg">
+                  <img alt="Image description" src="assets/imgs/dyskografia/IMG_0029.jpg" />
+          </a>
+          <a href="assets/imgs/dyskografia/IMG_0012.jpg">
+                  <img alt="Image description" src="assets/imgs/dyskografia/IMG_0012.jpg" />
+          </a>
+          <a href="assets/imgs/dyskografia/IMG_0040.jpg">
+                  <img alt="Image description" src="assets/imgs/dyskografia/IMG_0040.jpg" />
+          </a>
+          <a href="assets/imgs/dyskografia/IMG_0038.jpg">
+                  <img alt="Image description" src="assets/imgs/dyskografia/IMG_0038.jpg" />
+          </a>
+          <a href="assets/imgs/dyskografia/IMG_0016.jpg">
+                  <img alt="Image description" src="assets/imgs/dyskografia/IMG_0016.jpg" />
+          </a>
+          <a href="assets/imgs/dyskografia/IMG_0003.jpg">
+                  <img alt="Image description" src="assets/imgs/dyskografia/IMG_0003.jpg" />
+          </a>
+          <a href="assets/imgs/dyskografia/IMG_0031.jpg">
+                  <img alt="Image description" src="assets/imgs/dyskografia/IMG_0031.jpg" />
+          </a>
+          <a href="assets/imgs/dyskografia/IMG_0002.jpg">
+                  <img alt="Image description" src="assets/imgs/dyskografia/IMG_0002.jpg" />
+          </a>
+          <a href="assets/imgs/dyskografia/IMG_0006.jpg">
+                  <img alt="Image description" src="assets/imgs/dyskografia/IMG_0006.jpg" />
+          </a>
+          <a href="assets/imgs/dyskografia/IMG_0007.jpg">
+                  <img alt="Image description" src="assets/imgs/dyskografia/IMG_0007.jpg" />
+          </a>
+          <a href="assets/imgs/dyskografia/1981_Polskie_Nagrania.jpg">
+                  <img alt="1981 Polskie Nagrania Album Cover" src="assets/imgs/dyskografia/1981_Polskie_Nagrania.jpg" />
+          </a>
+          <a href="assets/imgs/dyskografia/1980_Deutsche_Grammophon.jpg">
+                  <img alt="1980 Deutsche Grammophon Album Cover" src="assets/imgs/dyskografia/1980_Deutsche_Grammophon.jpg" />
+          </a>
+     
+        
         </div>
       </div>
     </section>
@@ -116,6 +269,7 @@
       <div class="container px-4 mx-auto">
         <div class="flex justify-between items-end text-sm">
           <p>Copyright ©2024 Ewa Pobłocka. All Rights Reserved.</p>
+          <p>Zdjęcia - Bartek Barczyk</p>
         </div>
       </div>
     </footer>
