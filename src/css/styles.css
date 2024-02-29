@@ -19,3 +19,40 @@ p, span, li {
 a:hover {
     @apply underline;
 }
+
+.collage img:nth-child(1) {
+    width: 20%;
+    top: 10px;
+}
+
+.collage img:nth-child(2) {
+    width: 22%;
+    left: 18%;
+    top: 45px;
+}
+
+.collage img:nth-child(3) {
+    width: 28%;
+    left: 0;
+    right: 0;
+    margin-inline: auto;
+}
+
+.collage img:nth-child(4) {
+    width: 19%;
+    right: 18%;
+    top: -10px;
+}
+
+.collage img:nth-child(5) {
+    width: 21%;
+    right: 0;
+    top: 7px;
+}
+
+.collage img:nth-child(6) {
+    width: 31%;
+    right: 45px;
+    top: 100%;
+    z-index: -1;
+}
