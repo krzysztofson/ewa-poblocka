@@ -454,37 +454,6 @@ p, span, li {
 a:hover {
   text-decoration-line: underline;
 }
-.collage img:nth-child(1) {
-    width: 20%;
-    top: 10px;
-}
-.collage img:nth-child(2) {
-    width: 22%;
-    left: 18%;
-    top: 45px;
-}
-.collage img:nth-child(3) {
-    width: 28%;
-    left: 0;
-    right: 0;
-    margin-inline: auto;
-}
-.collage img:nth-child(4) {
-    width: 19%;
-    right: 18%;
-    top: -10px;
-}
-.collage img:nth-child(5) {
-    width: 21%;
-    right: 0;
-    top: 7px;
-}
-.collage img:nth-child(6) {
-    width: 31%;
-    right: 45px;
-    top: 100%;
-    z-index: -1;
-}
 /* Custom CSS. Ensure this comes before the tailwind utilities*/
 /* purgecss end ignore */
 .fixed {
@@ -534,9 +503,6 @@ a:hover {
 .h-screen {
   height: 100vh;
 }
-.min-h-\[100px\] {
-  min-height: 100px;
-}
 .w-full {
   width: 100%;
 }
@@ -552,11 +518,14 @@ a:hover {
 .grid-cols-1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
 .grid-cols-4 {
   grid-template-columns: repeat(4, minmax(0, 1fr));
 }
-.grid-cols-2 {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+.grid-cols-6 {
+  grid-template-columns: repeat(6, minmax(0, 1fr));
 }
 .flex-col {
   flex-direction: column;
@@ -572,6 +541,9 @@ a:hover {
 }
 .justify-between {
   justify-content: space-between;
+}
+.gap-1 {
+  gap: 0.25rem;
 }
 .gap-4 {
   gap: 1rem;
@@ -594,6 +566,10 @@ a:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(250 240 230 / var(--tw-bg-opacity));
 }
+.bg-primary-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(217 185 155 / var(--tw-bg-opacity));
+}
 .bg-stone-800 {
   --tw-bg-opacity: 1;
   background-color: rgb(41 37 36 / var(--tw-bg-opacity));
@@ -605,10 +581,6 @@ a:hover {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-.bg-primary-500 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(217 185 155 / var(--tw-bg-opacity));
 }
 .bg-cover {
   background-size: cover;
@@ -649,17 +621,17 @@ a:hover {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
 }
+.pb-10 {
+  padding-bottom: 2.5rem;
+}
 .pt-10 {
   padding-top: 2.5rem;
 }
 .pt-12 {
   padding-top: 3rem;
 }
-.pt-44 {
-  padding-top: 11rem;
-}
-.pb-10 {
-  padding-bottom: 2.5rem;
+.pt-14 {
+  padding-top: 3.5rem;
 }
 .text-center {
   text-align: center;
@@ -737,11 +709,11 @@ a:hover {
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
-  .md\:grid-cols-6 {
-    grid-template-columns: repeat(6, minmax(0, 1fr));
-  }
   .md\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .md\:grid-cols-6 {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
   }
   .md\:p-0 {
     padding: 0px;
