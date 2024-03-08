@@ -9,5 +9,8 @@ function togglenav() {
 navBtn.addEventListener('click', togglenav);
 
 window.addEventListener('load', () => {
-    lightGallery(document.getElementById('lightgallery'));
+    lightGallery(document.getElementById('lightgallery'), {
+        getCaptionFromTitleOrAlt: true,
+        thumbHeight: "60px",
+    });
 });

@@ -500,6 +500,9 @@ a:hover {
 .hidden {
   display: none;
 }
+.aspect-square {
+  aspect-ratio: 1 / 1;
+}
 .h-screen {
   height: 100vh;
 }
@@ -523,9 +526,6 @@ a:hover {
 }
 .grid-cols-4 {
   grid-template-columns: repeat(4, minmax(0, 1fr));
-}
-.grid-cols-6 {
-  grid-template-columns: repeat(6, minmax(0, 1fr));
 }
 .grid-cols-7 {
   grid-template-columns: repeat(7, minmax(0, 1fr));
@@ -593,6 +593,10 @@ a:hover {
 }
 .bg-no-repeat {
   background-repeat: no-repeat;
+}
+.object-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .p-10 {
   padding: 2.5rem;
