@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -21,27 +21,28 @@
   <body class="font-main">
 
     <nav class="fixed w-full top-0 bg-stone-900 text py-4 shadow z-20">
-      <div class="relative">
-        <div class="container px-4 mx-auto flex items-center justify-between">
-          <a href="index.html" class="flex-shrink-0 text-xl font-bold text-primary-200">Ewa Pobłocka</a>
-          <div class="js-nav hidden absolute top-11 w-full inset-x-0 mx-auto py-10 space-y-5 text-sm text-center font-light text-slate-100 lg:relative lg:block lg:top-0 lg:py-0 lg:bg-stone-900 lg:space-x-5 lg:text-right bg-stone-800 flex-col">
-            <a href="index.html#about">Biografia</a>
-            <a href="index.html#dyskografia">Dyskografia</a>
-            <a href="galeria.html">Galeria</a>
-            <a href="index.html#bach">Bach</a>
-            <a href="do-pobrania.html">Do pobrania</a>
-            <a href="index.html#aktualnosci">Aktualności</a>
-            <a href="#kontakt">Kontakt</a>
+        <div class="relative">
+          <div class="container px-4 mx-auto flex items-center justify-between">
+            <a href="index.html" class="flex-shrink-0 text-xl font-bold text-primary-200">Ewa Pobłocka</a>
+            <div class="js-nav hidden absolute top-11 w-full inset-x-0 mx-auto py-10 space-y-5 lg:space-y-0 text-sm text-center font-light text-slate-100 lg:relative lg:flex lg:top-0 lg:py-0 lg:bg-stone-900 lg:space-x-5 lg:text-right bg-stone-800 flex-col lg:flex-row lg:items-center lg:justify-end">
+              <a href="en.html#about">Biography</a>
+              <a href="en.html#dyskografia">Discography</a>
+              <a href="galeria.html">Gallery</a>
+              <a href="en.html#bach">Bach</a>
+              <a href="downloads.html">Download</a>
+              <a href="en.html#aktualnosci">News</a>
+              <a href="#kontakt">Contact</a>
+              <a href="index.html"><img src="assets/imgs/pl.png" class="w-4 block"></a>
+            </div>
+            <button class="cursor-pointer js-nav-btn lg:hidden">
+              <?xml version="1.0" encoding="utf-8"?>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M4 5C3.44772 5 3 5.44772 3 6C3 6.55228 3.44772 7 4 7H20C20.5523 7 21 6.55228 21 6C21 5.44772 20.5523 5 20 5H4ZM7 12C7 11.4477 7.44772 11 8 11H20C20.5523 11 21 11.4477 21 12C21 12.5523 20.5523 13 20 13H8C7.44772 13 7 12.5523 7 12ZM13 18C13 17.4477 13.4477 17 14 17H20C20.5523 17 21 17.4477 21 18C21 18.5523 20.5523 19 20 19H14C13.4477 19 13 18.5523 13 18Z" fill="#fff"/>
+              </svg>
+            </button>
           </div>
-          <button class="cursor-pointer js-nav-btn lg:hidden">
-            <?xml version="1.0" encoding="utf-8"?>
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M4 5C3.44772 5 3 5.44772 3 6C3 6.55228 3.44772 7 4 7H20C20.5523 7 21 6.55228 21 6C21 5.44772 20.5523 5 20 5H4ZM7 12C7 11.4477 7.44772 11 8 11H20C20.5523 11 21 11.4477 21 12C21 12.5523 20.5523 13 20 13H8C7.44772 13 7 12.5523 7 12ZM13 18C13 17.4477 13.4477 17 14 17H20C20.5523 17 21 17.4477 21 18C21 18.5523 20.5523 19 20 19H14C13.4477 19 13 18.5523 13 18Z" fill="#fff"/>
-            </svg>
-          </button>
         </div>
-      </div>
-    </nav>
+      </nav>
 
     <header class="flex text-center h-screen lg:h-auto lg:aspect-video bg-cover bg-no-repeat bg-top" style="background-image: url('assets/imgs/header.jpg');">
     </header>
@@ -49,9 +50,9 @@
 
     <section class="py-20 bg-primary-100" id="dopobrania">
       <div class="container mx-auto p-10 bg-white">
-        <h2 class="mb-6 text-5xl text-primary-500">Z mojej szuflady</h2>
+        <h2 class="mb-6 text-5xl text-primary-500">From my drawer:</h2>
         <p class="text-lg pb-10">
-          <strong class="text-stone-900">Artystka chętnie sięga po pióro</strong> – publikowała swoje eseje m.in. w Zesztach Literackich, Kwartalniku Artystycznym Wyspa i Kwartalniku Literackim Bliza. W sierpniu 2021 r. ukazała się jej pierwsza książka – Forte-piano, opublikowana przez wydawnictwo Słowo/obraz terytoria. W planach ma kolejną książkę, poświęconą miejscu Bacha w jej artystycznej drodze.
+          <strong class="text-stone-900">Ewa Pobłocka also willingly devotes herself to literary activities</strong> – she has published her essays in, among others: Zeszty Literackie, Kwartalnik Artystyczny Wyspa and Kwartalnik Literacki Bliza.  Her first book, ‘Forte-piano’, was released in 2021 by the publishing house Słowa/obraz terytoria. She is working on another book, devoted to Bach's significance in her artistic path.
         </p>
         <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
             <a href="assets/download/Dzienniki-japonskie-1.pdf" target="_blank" class="bg-primary-500 text-white p-4 rounded-lg text-center">Dzienniki Japońskie 1</a>
@@ -71,9 +72,9 @@
 
     <section class="py-20 bg-primary-100" id="dopobrania">
       <div class="container mx-auto p-10 bg-white">
-        <h2 class="mb-6 text-5xl text-primary-500 text-right">Recenzje</h2>
+        <h2 class="mb-6 text-5xl text-primary-500 text-right">Reviews</h2>
         <p class="text-lg text-right">
-          <strong class="text-stone-900">W docenianym przez krytyków dorobku fonograficznym Ewa Pobłocka ma ponad 50 płyt,</strong> obejmujących repertuar solowy, kameralny oraz koncertowy od baroku do współczesności, zrealizowanych na instrumentach współczesnych oraz historycznych z epoki Chopina. Zostały one nagrane m.in. dla Deutsche Grammophon, Pony Canyon, Victor JVC, Conifer Records, Polskich Nagrań „Muza”, NIFC, CD Accord i BeArTonu. Jako pierwsza spośród polskich pianistów nagrała oba tomy Das Wohltemperierte Klavier Bacha (NIFC 2018, 2023). Album z pierwszym tomem znalazł się na liście 50 najlepszych nagrań Bachowskich w historii opublikowanej przez prestiżowy magazyn „Gramophone”, a także nagrodzony przez ten magazyn jako płyta miesiąca.
+          <strong class="text-stone-900">Ewa Pobłocka's critically acclaimed phonographic output includes over 50 albums,</strong> covering solo, chamber and concert repertoire from the baroque to the present, performed on contemporary and period instruments from Chopin's era. They were recorded, among others, for Deutsche Grammophon, Pony Canyon, Victor JVC, Conifer Records, Polskie Nagrania "Muza", NIFC, CD Accord and BeArTon. She was the first Polish pianist to record both volumes of Bach's Das Wohltemperierte Klavier (NIFC 2018, 2023). The album with the first volume was included on the list of the 50 best Bach recordings in history published by the prestigious "Gramophone" magazine, and was also awarded by this magazine as the album of the month.
         </p>
         <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 pt-10">
           <a href="assets/download/recenzje/Jed-Distler-Gramophone.pdf" target="_blank" class="bg-primary-500 text-white p-4 rounded-lg text-center">Jed Distler Gramophone</a>
