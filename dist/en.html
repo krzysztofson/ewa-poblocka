@@ -5,26 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/css/main.css" />
     <title>Ewa Pobłocka</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <script src="./assets/js/main.js" defer="defer"></script>
     <script src="
     https://cdn.jsdelivr.net/npm/lightgallery.js@1.4.0/dist/js/lightgallery.min.js
     "></script>
-    <link href="
+    <link
+      href="
     https://cdn.jsdelivr.net/npm/lightgallery.js@1.4.0/dist/css/lightgallery.min.css
-    " rel="stylesheet">
+    "
+      rel="stylesheet"
+    />
   </head>
 
   <body class="font-main">
-
-    <nav class="fixed w-full top-0 bg-stone-900 text py-4 shadow z-20">
+    <nav class="text fixed top-0 z-20 w-full bg-stone-900 py-4 shadow">
       <div class="relative">
-        <div class="container px-4 mx-auto flex items-center justify-between">
-          <a href="index.html" class="flex-shrink-0 text-xl font-bold text-primary-200">Ewa Pobłocka</a>
-          <div class="js-nav hidden absolute top-11 w-full inset-x-0 mx-auto py-10 space-y-5 lg:space-y-0 text-sm text-center font-light text-slate-100 lg:relative lg:flex lg:top-0 lg:py-0 lg:bg-stone-900 lg:space-x-5 lg:text-right bg-stone-800 flex-col lg:flex-row lg:items-center lg:justify-end">
+        <div class="container mx-auto flex items-center justify-between px-4">
+          <a
+            href="index.html"
+            class="flex-shrink-0 text-xl font-bold text-primary-200"
+            >Ewa Pobłocka</a
+          >
+          <div
+            class="js-nav absolute inset-x-0 top-11 mx-auto hidden w-full flex-col space-y-5 bg-stone-800 py-10 text-center text-sm font-light text-slate-100 lg:relative lg:top-0 lg:flex lg:flex-row lg:items-center lg:justify-end lg:space-x-5 lg:space-y-0 lg:bg-stone-900 lg:py-0 lg:text-right"
+          >
             <a href="#about">Biography</a>
             <a href="#dyskografia">Discography</a>
             <a href="galeria.html">Gallery</a>
@@ -32,291 +46,732 @@
             <a href="downloads.html">Download</a>
             <a href="#aktualnosci">News</a>
             <a href="#kontakt">Contact</a>
-            <a href="index.html"><img src="assets/imgs/pl.png" class="w-4 block"></a>
+            <a href="index.html"
+              ><img src="assets/imgs/pl.png" class="block w-4"
+            /></a>
           </div>
-          <button class="cursor-pointer js-nav-btn lg:hidden">
+          <button class="js-nav-btn cursor-pointer lg:hidden">
             <?xml version="1.0" encoding="utf-8"?>
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M4 5C3.44772 5 3 5.44772 3 6C3 6.55228 3.44772 7 4 7H20C20.5523 7 21 6.55228 21 6C21 5.44772 20.5523 5 20 5H4ZM7 12C7 11.4477 7.44772 11 8 11H20C20.5523 11 21 11.4477 21 12C21 12.5523 20.5523 13 20 13H8C7.44772 13 7 12.5523 7 12ZM13 18C13 17.4477 13.4477 17 14 17H20C20.5523 17 21 17.4477 21 18C21 18.5523 20.5523 19 20 19H14C13.4477 19 13 18.5523 13 18Z" fill="#fff"/>
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="white"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M4 5C3.44772 5 3 5.44772 3 6C3 6.55228 3.44772 7 4 7H20C20.5523 7 21 6.55228 21 6C21 5.44772 20.5523 5 20 5H4ZM7 12C7 11.4477 7.44772 11 8 11H20C20.5523 11 21 11.4477 21 12C21 12.5523 20.5523 13 20 13H8C7.44772 13 7 12.5523 7 12ZM13 18C13 17.4477 13.4477 17 14 17H20C20.5523 17 21 17.4477 21 18C21 18.5523 20.5523 19 20 19H14C13.4477 19 13 18.5523 13 18Z"
+                fill="#fff"
+              />
             </svg>
           </button>
         </div>
       </div>
     </nav>
 
-    <header class="flex text-center h-screen lg:h-auto lg:aspect-video bg-cover bg-no-repeat bg-top" style="background-image: url('assets/imgs/header2.jpg');">
-    </header>
+    <header
+      class="flex h-screen bg-cover bg-top bg-no-repeat text-center lg:aspect-video lg:h-auto"
+      style="background-image: url('assets/imgs/header2.jpg')"
+    ></header>
 
     <section id="about">
-      <div class="md:grid md:grid-cols-2 md:relative">
-        <img loading="lazy" class="p-10 md:p-0 md:sticky md:top-0" src="assets/imgs/o-artystce.jpg" alt="Ewa Pobłocka">
-        <div class="flex flex-col justify-center p-4 md:py-20 md:px-10">
+      <div class="md:relative md:grid md:grid-cols-2">
+        <img
+          loading="lazy"
+          class="p-10 md:sticky md:top-0 md:p-0"
+          src="assets/imgs/o-artystce.jpg"
+          alt="Ewa Pobłocka"
+        />
+        <div class="flex flex-col justify-center p-4 md:px-10 md:py-20">
           <h2 class="mb-6 text-5xl text-primary-500">Biography</h2>
-          <p class="text-lg"><strong class="text-stone-900">Ewa Pobłocka is a prize-winner of the 10th International Fryderyk Chopin Piano Competition in Warsaw (1980)</strong>, where she also won the prize for the best performance of mazurkas. She won First Prize in the International Viotti Music Competition in Vercelli (1977) and the gold medal in the International Festival of Young Laureates in Bordeaux (1979).
+          <p class="text-lg">
+            <strong class="text-stone-900"
+              >Ewa Pobłocka is a prize-winner of the 10th International Fryderyk
+              Chopin Piano Competition in Warsaw (1980)</strong
+            >, where she also won the prize for the best performance of
+            mazurkas. She won First Prize in the International Viotti Music
+            Competition in Vercelli (1977) and the gold medal in the
+            International Festival of Young Laureates in Bordeaux (1979).
 
-            <br><br><strong class="text-stone-900">Ewa Pobłocka has performed throughout Europe and the Americas,</strong> as well as in China, Indonesia, the RSA, Singapore, South Korea, Japan and Australia, in such venues as the Herkules-Saal in Munich, Musikhalle in Hamburg, St. Petersburg Philharmonic Hall, Théâtre des Champs Elysées in Paris, Kyoi Hall in Tokyo, Auditorio Nacional in Madrid, Barbican Centre and Wigmore Hall in London, Musikverein in Vienna, Lincoln Center in New York, Glenn Gould Studio in Toronto and Sala Cecília Meireles in Rio De Janeiro, among many others. She has played as a soloist with the London Symphony Orchestra, English Chamber Orchestra, Orchestra del Maggio Musicale Fiorentino, Bayerischers Rundfunkorchester, Sinfonia Varsovia and Polish National Radio Symphony Orchestra. She repeatedly toured as a Warsaw Philharmonic Orchestra soloist under the baton of Kazimierz Kord. She is an accomplished chamber musician. 
+            <br /><br /><strong class="text-stone-900"
+              >Ewa Pobłocka has performed throughout Europe and the
+              Americas,</strong
+            >
+            as well as in China, Indonesia, the RSA, Singapore, South Korea,
+            Japan and Australia, in such venues as the Herkules-Saal in Munich,
+            Musikhalle in Hamburg, St. Petersburg Philharmonic Hall, Théâtre des
+            Champs Elysées in Paris, Kyoi Hall in Tokyo, Auditorio Nacional in
+            Madrid, Barbican Centre and Wigmore Hall in London, Musikverein in
+            Vienna, Lincoln Center in New York, Glenn Gould Studio in Toronto
+            and Sala Cecília Meireles in Rio De Janeiro, among many others. She
+            has played as a soloist with the London Symphony Orchestra, English
+            Chamber Orchestra, Orchestra del Maggio Musicale Fiorentino,
+            Bayerischers Rundfunkorchester, Sinfonia Varsovia and Polish
+            National Radio Symphony Orchestra. She repeatedly toured as a Warsaw
+            Philharmonic Orchestra soloist under the baton of Kazimierz Kord.
+            She is an accomplished chamber musician.
 
-            <br><br><strong class="text-stone-900">She has given numerous first performances and made world premiere recordings</strong> of works by Polish contemporary composers, including Andrzej Panufnik, Witold Lutosławski (first Polish recording of the Piano Concerto with the Polish Radio Symphony Orchestra under the composer’s baton), Paweł Szymański and Paweł Mykietyn. Ewa Pobłocka has worked with European radio stations and recorded more than 50 discs (for Deutsche Grammophon, Polskie Nagrania, CD Accord and Bearton, among others). Many of her recordings have won prizes and critical acclaim, just to mention two ‘Record of the Year’ distinctions awarded by the 'Studio' Magazine and the John Field Medal for the recording of his complete Nocturnes (the first recording of the whole set ever made). She is the first Polish pianist in history to record both volumes of Das Wohltemperierte Klavier by Bach. Recently she has performed both the volumes during the recitali series in many venues in Europe. Her last album with the 1st book has been awarded as recording of the month by and has been placed among the fifty best recordings of Bach’s music in history by the 'Gramophone' Magazine, also receiving special commendation in 'The Record Geijutsu'.
+            <br /><br /><strong class="text-stone-900"
+              >She has given numerous first performances and made world premiere
+              recordings</strong
+            >
+            of works by Polish contemporary composers, including Andrzej
+            Panufnik, Witold Lutosławski (first Polish recording of the Piano
+            Concerto with the Polish Radio Symphony Orchestra under the
+            composer’s baton), Paweł Szymański and Paweł Mykietyn. Ewa Pobłocka
+            has worked with European radio stations and recorded more than 50
+            discs (for Deutsche Grammophon, Polskie Nagrania, CD Accord and
+            Bearton, among others). Many of her recordings have won prizes and
+            critical acclaim, just to mention two ‘Record of the Year’
+            distinctions awarded by the 'Studio' Magazine and the John Field
+            Medal for the recording of his complete Nocturnes (the first
+            recording of the whole set ever made). She is the first Polish
+            pianist in history to record both volumes of Das Wohltemperierte
+            Klavier by Bach. Recently she has performed both the volumes during
+            the recitali series in many venues in Europe. Her last album with
+            the 1st book has been awarded as recording of the month by and has
+            been placed among the fifty best recordings of Bach’s music in
+            history by the 'Gramophone' Magazine, also receiving special
+            commendation in 'The Record Geijutsu'.
 
-            <br><br><strong class="text-stone-900">She is a distinguished pedagogue, teaching</strong> at the Academy of Music in Bydgoszcz. She has given numerous master classes in Canada, The United States, Vietnam, Japan, Mongolia, Korea, China, Ireland, Germany, Denmark, Norway, Poland, and Belgium, among many others. She has been a jury member of the most prestigious international piano competitions, such as the Chopin Competition in Warsaw, Artur Rubinstein Competition in Tel-Aviv, as well as the competitions in Hamamatsu, Pretoria, Calgary, Hastings and Ettlingen, among many others.
+            <br /><br /><strong class="text-stone-900"
+              >She is a distinguished pedagogue, teaching</strong
+            >
+            at the Academy of Music in Bydgoszcz. She has given numerous master
+            classes in Canada, The United States, Vietnam, Japan, Mongolia,
+            Korea, China, Ireland, Germany, Denmark, Norway, Poland, and
+            Belgium, among many others. She has been a jury member of the most
+            prestigious international piano competitions, such as the Chopin
+            Competition in Warsaw, Artur Rubinstein Competition in Tel-Aviv, as
+            well as the competitions in Hamamatsu, Pretoria, Calgary, Hastings
+            and Ettlingen, among many others.
 
-            <br><br><strong class="text-stone-900">Ewa Pobłocka also willingly devotes herself to literary activities</strong> – her first book, ‘Forte-piano’, was released in 2021. Since 2020, she has been running the broadcasts ‘Start with Bach’ and ‘Bach’s Cases” in Polish Radio. 
+            <br /><br /><strong class="text-stone-900"
+              >Ewa Pobłocka also willingly devotes herself to literary
+              activities</strong
+            >
+            – her first book, ‘Forte-piano’, was released in 2021. Since 2020,
+            she has been running the broadcasts ‘Start with Bach’ and ‘Bach’s
+            Cases” in Polish Radio.
           </p>
         </div>
       </div>
     </section>
 
-    <section class="py-20 bg-primary-100" id="dyskografia">
-      <div class="container mx-auto p-10 bg-white">
+    <section class="bg-primary-100 py-20" id="dyskografia">
+      <div class="container mx-auto bg-white p-10">
         <h2 class="mb-6 text-5xl text-primary-500">Discography</h2>
         <p class="text-lg">
-          <strong class="text-stone-900">Ewa Pobłocka's critically acclaimed phonographic output includes over 50 albums,</strong> covering solo, chamber and concert repertoire from the baroque to the present, performed on contemporary and period instruments from Chopin's era. They were recorded, among others, for Deutsche Grammophon, Pony Canyon, Victor JVC, Conifer Records, Polskie Nagrania "Muza", NIFC, CD Accord and BeArTon. She was the first Polish pianist to record both volumes of Bach's Das Wohltemperierte Klavier (NIFC 2018, 2023). The album with the first volume was included on the list of the 50 best Bach recordings in history published by the prestigious "Gramophone" magazine, and was also awarded by this magazine as the album of the month.
+          <strong class="text-stone-900"
+            >Ewa Pobłocka's critically acclaimed phonographic output includes
+            over 50 albums,</strong
+          >
+          covering solo, chamber and concert repertoire from the baroque to the
+          present, performed on contemporary and period instruments from
+          Chopin's era. They were recorded, among others, for Deutsche
+          Grammophon, Pony Canyon, Victor JVC, Conifer Records, Polskie Nagrania
+          "Muza", NIFC, CD Accord and BeArTon. She was the first Polish pianist
+          to record both volumes of Bach's Das Wohltemperierte Klavier (NIFC
+          2018, 2023). The album with the first volume was included on the list
+          of the 50 best Bach recordings in history published by the prestigious
+          "Gramophone" magazine, and was also awarded by this magazine as the
+          album of the month.
         </p>
-        <div class="grid grid-cols-4 md:grid-cols-6 gap-5 pt-10" id="lightgallery">
-
-          <a href="assets/imgs/dyskografia/johann-sebastian-bach-das-wohltemperierte-klavier-ii-b-iext136852037.jpg">
-            <img loading="lazy" alt="Pobłocka Pasiecznik Moniuszko Songs 2022" src="assets/imgs/dyskografia/johann-sebastian-bach-das-wohltemperierte-klavier-ii-b-iext136852037.jpg" />
+        <div
+          class="grid grid-cols-4 gap-5 pt-10 md:grid-cols-6"
+          id="lightgallery"
+        >
+          <a
+            href="assets/imgs/dyskografia/johann-sebastian-bach-das-wohltemperierte-klavier-ii-b-iext136852037.jpg"
+          >
+            <img
+              loading="lazy"
+              alt="Pobłocka Pasiecznik Moniuszko Songs 2022"
+              src="assets/imgs/dyskografia/johann-sebastian-bach-das-wohltemperierte-klavier-ii-b-iext136852037.jpg"
+            />
           </a>
-          <a href="assets/imgs/dyskografia/Pobłocka-Pasiecznik-Moniuszko-pieśni-2022.jpg">
-            <img loading="lazy" alt="Pobłocka Pasiecznik Moniuszko Songs 2022" src="assets/imgs/dyskografia/Pobłocka-Pasiecznik-Moniuszko-pieśni-2022.jpg" />
+          <a
+            href="assets/imgs/dyskografia/Pobłocka-Pasiecznik-Moniuszko-pieśni-2022.jpg"
+          >
+            <img
+              loading="lazy"
+              alt="Pobłocka Pasiecznik Moniuszko Songs 2022"
+              src="assets/imgs/dyskografia/Pobłocka-Pasiecznik-Moniuszko-pieśni-2022.jpg"
+            />
           </a>
           <a href="assets/imgs/dyskografia/2018(NIFC).jpg">
-              <img loading="lazy" alt="2018 NIFC" src="assets/imgs/dyskografia/2018(NIFC).jpg" />
+            <img
+              loading="lazy"
+              alt="2018 NIFC"
+              src="assets/imgs/dyskografia/2018(NIFC).jpg"
+            />
           </a>
           <a href="assets/imgs/dyskografia/2017(NIFC).jpg">
-              <img loading="lazy" alt="2017 NIFC" src="assets/imgs/dyskografia/2017(NIFC).jpg" />
+            <img
+              loading="lazy"
+              alt="2017 NIFC"
+              src="assets/imgs/dyskografia/2017(NIFC).jpg"
+            />
           </a>
           <a href="assets/imgs/dyskografia/2015-NIFC.jpg">
-              <img loading="lazy" alt="2015 NIFC" src="assets/imgs/dyskografia/2015-NIFC.jpg" />
+            <img
+              loading="lazy"
+              alt="2015 NIFC"
+              src="assets/imgs/dyskografia/2015-NIFC.jpg"
+            />
           </a>
           <a href="assets/imgs/dyskografia/IMG_0010.jpg">
-              <img loading="lazy" alt="IMG 0010" src="assets/imgs/dyskografia/IMG_0010.jpg" />
+            <img
+              loading="lazy"
+              alt="IMG 0010"
+              src="assets/imgs/dyskografia/IMG_0010.jpg"
+            />
           </a>
           <a href="assets/imgs/dyskografia/IMG_0003_www.jpg">
-              <img loading="lazy" alt="IMG 0003 WWW" src="assets/imgs/dyskografia/IMG_0003_www.jpg" />
+            <img
+              loading="lazy"
+              alt="IMG 0003 WWW"
+              src="assets/imgs/dyskografia/IMG_0003_www.jpg"
+            />
           </a>
           <a href="assets/imgs/dyskografia/IMG_0005_www.jpg">
-              <img loading="lazy" alt="IMG 0005 WWW" src="assets/imgs/dyskografia/IMG_0005_www.jpg" />
+            <img
+              loading="lazy"
+              alt="IMG 0005 WWW"
+              src="assets/imgs/dyskografia/IMG_0005_www.jpg"
+            />
           </a>
           <a href="assets/imgs/dyskografia/2012-Nokturny-Canyon.png">
-              <img loading="lazy" alt="2012 Nocturnes Canyon" src="assets/imgs/dyskografia/2012-Nokturny-Canyon.png" />
+            <img
+              loading="lazy"
+              alt="2012 Nocturnes Canyon"
+              src="assets/imgs/dyskografia/2012-Nokturny-Canyon.png"
+            />
           </a>
           <a href="assets/imgs/dyskografia/2010-CDA.png">
-              <img loading="lazy" alt="2010 CDA" src="assets/imgs/dyskografia/2010-CDA.png" />
+            <img
+              loading="lazy"
+              alt="2010 CDA"
+              src="assets/imgs/dyskografia/2010-CDA.png"
+            />
           </a>
           <a href="assets/imgs/dyskografia/IMG_0004_www.jpg">
-              <img loading="lazy" alt="IMG 0004 WWW" src="assets/imgs/dyskografia/IMG_0004_www.jpg" />
+            <img
+              loading="lazy"
+              alt="IMG 0004 WWW"
+              src="assets/imgs/dyskografia/IMG_0004_www.jpg"
+            />
           </a>
           <a href="assets/imgs/dyskografia/2009-SACD.png">
-              <img loading="lazy" alt="2009 SACD" src="assets/imgs/dyskografia/2009-SACD.png" />
+            <img
+              loading="lazy"
+              alt="2009 SACD"
+              src="assets/imgs/dyskografia/2009-SACD.png"
+            />
           </a>
           <a href="assets/imgs/dyskografia/IMG_0013.jpg">
-              <img loading="lazy" alt="IMG 0013" src="assets/imgs/dyskografia/IMG_0013.jpg" />
+            <img
+              loading="lazy"
+              alt="IMG 0013"
+              src="assets/imgs/dyskografia/IMG_0013.jpg"
+            />
           </a>
           <a href="assets/imgs/dyskografia/IMG_0011.jpg">
-              <img loading="lazy" alt="IMG 0011" src="assets/imgs/dyskografia/IMG_0011.jpg" />
+            <img
+              loading="lazy"
+              alt="IMG 0011"
+              src="assets/imgs/dyskografia/IMG_0011.jpg"
+            />
           </a>
           <a href="assets/imgs/dyskografia/2008-JVC.jpg">
-              <img loading="lazy" alt="2008 JVC" src="assets/imgs/dyskografia/2008-JVC.jpg" />
+            <img
+              loading="lazy"
+              alt="2008 JVC"
+              src="assets/imgs/dyskografia/2008-JVC.jpg"
+            />
           </a>
           <a href="assets/imgs/dyskografia/2008-Brahms-JVC.png">
-              <img loading="lazy" alt="2008 Brahms JVC" src="assets/imgs/dyskografia/2008-Brahms-JVC.png" />
+            <img
+              loading="lazy"
+              alt="2008 Brahms JVC"
+              src="assets/imgs/dyskografia/2008-Brahms-JVC.png"
+            />
           </a>
           <a href="assets/imgs/dyskografia/IMG_0023.jpg">
-              <img loading="lazy" alt="IMG 0023" src="assets/imgs/dyskografia/IMG_0023.jpg" />
+            <img
+              loading="lazy"
+              alt="IMG 0023"
+              src="assets/imgs/dyskografia/IMG_0023.jpg"
+            />
           </a>
           <a href="assets/imgs/dyskografia/IMG_0009.jpg">
-              <img loading="lazy" alt="IMG 0009" src="assets/imgs/dyskografia/IMG_0009.jpg" />
+            <img
+              loading="lazy"
+              alt="IMG 0009"
+              src="assets/imgs/dyskografia/IMG_0009.jpg"
+            />
           </a>
           <a href="assets/imgs/dyskografia/IMG_0018.jpg">
-            <img loading="lazy" alt="Image 18" src="assets/imgs/dyskografia/IMG_0018.jpg" />
+            <img
+              loading="lazy"
+              alt="Image 18"
+              src="assets/imgs/dyskografia/IMG_0018.jpg"
+            />
           </a>
           <a href="assets/imgs/dyskografia/IMG_0019.jpg">
-                  <img loading="lazy" alt="Image 19" src="assets/imgs/dyskografia/IMG_0019.jpg" />
+            <img
+              loading="lazy"
+              alt="Image 19"
+              src="assets/imgs/dyskografia/IMG_0019.jpg"
+            />
           </a>
           <a href="assets/imgs/dyskografia/IMG_0036.jpg">
-                  <img loading="lazy" alt="Image 36" src="assets/imgs/dyskografia/IMG_0036.jpg" />
+            <img
+              loading="lazy"
+              alt="Image 36"
+              src="assets/imgs/dyskografia/IMG_0036.jpg"
+            />
           </a>
           <a href="assets/imgs/dyskografia/IMG_0026.jpg">
-                  <img loading="lazy" alt="Image 26" src="assets/imgs/dyskografia/IMG_0026.jpg" />
+            <img
+              loading="lazy"
+              alt="Image 26"
+              src="assets/imgs/dyskografia/IMG_0026.jpg"
+            />
           </a>
           <a href="assets/imgs/dyskografia/IMG_0008.jpg">
-                  <img loading="lazy" alt="Image 8" src="assets/imgs/dyskografia/IMG_0008.jpg" />
+            <img
+              loading="lazy"
+              alt="Image 8"
+              src="assets/imgs/dyskografia/IMG_0008.jpg"
+            />
           </a>
           <a href="assets/imgs/dyskografia/IMG_0014.jpg">
-                  <img loading="lazy" alt="Image 14" src="assets/imgs/dyskografia/IMG_0014.jpg" />
+            <img
+              loading="lazy"
+              alt="Image 14"
+              src="assets/imgs/dyskografia/IMG_0014.jpg"
+            />
           </a>
           <a href="assets/imgs/dyskografia/2000-Faure-Nokturny.png">
-                  <img loading="lazy" alt="2000 Faure Nokturny" src="assets/imgs/dyskografia/2000-Faure-Nokturny.png" />
+            <img
+              loading="lazy"
+              alt="2000 Faure Nokturny"
+              src="assets/imgs/dyskografia/2000-Faure-Nokturny.png"
+            />
           </a>
           <a href="assets/imgs/dyskografia/IMG_0028.jpg">
-                  <img loading="lazy" alt="Image 28" src="assets/imgs/dyskografia/IMG_0028.jpg" />
+            <img
+              loading="lazy"
+              alt="Image 28"
+              src="assets/imgs/dyskografia/IMG_0028.jpg"
+            />
           </a>
           <a href="assets/imgs/dyskografia/IMG_0024.jpg">
-                  <img loading="lazy" alt="Image 24" src="assets/imgs/dyskografia/IMG_0024.jpg" />
+            <img
+              loading="lazy"
+              alt="Image 24"
+              src="assets/imgs/dyskografia/IMG_0024.jpg"
+            />
           </a>
           <a href="assets/imgs/dyskografia/IMG_0017.jpg">
-                  <img loading="lazy" alt="Image 17" src="assets/imgs/dyskografia/IMG_0017.jpg" />
+            <img
+              loading="lazy"
+              alt="Image 17"
+              src="assets/imgs/dyskografia/IMG_0017.jpg"
+            />
           </a>
           <a href="assets/imgs/dyskografia/IMG_0037.jpg">
-                  <img loading="lazy" alt="Image 37" src="assets/imgs/dyskografia/IMG_0037.jpg" />
+            <img
+              loading="lazy"
+              alt="Image 37"
+              src="assets/imgs/dyskografia/IMG_0037.jpg"
+            />
           </a>
           <a href="assets/imgs/dyskografia/IMG_0032.jpg">
-                  <img loading="lazy" alt="Image 32" src="assets/imgs/dyskografia/IMG_0032.jpg" />
+            <img
+              loading="lazy"
+              alt="Image 32"
+              src="assets/imgs/dyskografia/IMG_0032.jpg"
+            />
           </a>
           <a href="assets/imgs/dyskografia/IMG_0005.jpg">
-                  <img loading="lazy" alt="Image 5" src="assets/imgs/dyskografia/IMG_0005.jpg" />
+            <img
+              loading="lazy"
+              alt="Image 5"
+              src="assets/imgs/dyskografia/IMG_0005.jpg"
+            />
           </a>
           <a href="assets/imgs/dyskografia/IMG_0020.jpg">
-                  <img loading="lazy" alt="Image 20" src="assets/imgs/dyskografia/IMG_0020.jpg" />
+            <img
+              loading="lazy"
+              alt="Image 20"
+              src="assets/imgs/dyskografia/IMG_0020.jpg"
+            />
           </a>
           <a href="assets/imgs/dyskografia/IMG_0033.jpg">
-                  <img loading="lazy" alt="Image 33" src="assets/imgs/dyskografia/IMG_0033.jpg" />
+            <img
+              loading="lazy"
+              alt="Image 33"
+              src="assets/imgs/dyskografia/IMG_0033.jpg"
+            />
           </a>
           <a href="assets/imgs/dyskografia/IMG_0027.jpg">
-                  <img loading="lazy" alt="Image 27" src="assets/imgs/dyskografia/IMG_0027.jpg" />
+            <img
+              loading="lazy"
+              alt="Image 27"
+              src="assets/imgs/dyskografia/IMG_0027.jpg"
+            />
           </a>
           <a href="assets/imgs/dyskografia/IMG_0025.jpg">
-                  <img loading="lazy" alt="Image 25" src="assets/imgs/dyskografia/IMG_0025.jpg" />
+            <img
+              loading="lazy"
+              alt="Image 25"
+              src="assets/imgs/dyskografia/IMG_0025.jpg"
+            />
           </a>
 
           <a href="assets/imgs/dyskografia/IMG_0022.jpg">
-            <img loading="lazy" alt="Image description" src="assets/imgs/dyskografia/IMG_0022.jpg" />
+            <img
+              loading="lazy"
+              alt="Image description"
+              src="assets/imgs/dyskografia/IMG_0022.jpg"
+            />
           </a>
           <a href="assets/imgs/dyskografia/IMG_0015.jpg">
-                  <img loading="lazy" alt="Image description" src="assets/imgs/dyskografia/IMG_0015.jpg" />
+            <img
+              loading="lazy"
+              alt="Image description"
+              src="assets/imgs/dyskografia/IMG_0015.jpg"
+            />
           </a>
           <a href="assets/imgs/dyskografia/IMG_0021.jpg">
-                  <img loading="lazy" alt="Image description" src="assets/imgs/dyskografia/IMG_0021.jpg" />
+            <img
+              loading="lazy"
+              alt="Image description"
+              src="assets/imgs/dyskografia/IMG_0021.jpg"
+            />
           </a>
           <a href="assets/imgs/dyskografia/IMG_0029.jpg">
-                  <img loading="lazy" alt="Image description" src="assets/imgs/dyskografia/IMG_0029.jpg" />
+            <img
+              loading="lazy"
+              alt="Image description"
+              src="assets/imgs/dyskografia/IMG_0029.jpg"
+            />
           </a>
           <a href="assets/imgs/dyskografia/IMG_0012.jpg">
-                  <img loading="lazy" alt="Image description" src="assets/imgs/dyskografia/IMG_0012.jpg" />
+            <img
+              loading="lazy"
+              alt="Image description"
+              src="assets/imgs/dyskografia/IMG_0012.jpg"
+            />
           </a>
           <a href="assets/imgs/dyskografia/IMG_0040.jpg">
-                  <img loading="lazy" alt="Image description" src="assets/imgs/dyskografia/IMG_0040.jpg" />
+            <img
+              loading="lazy"
+              alt="Image description"
+              src="assets/imgs/dyskografia/IMG_0040.jpg"
+            />
           </a>
           <a href="assets/imgs/dyskografia/IMG_0038.jpg">
-                  <img loading="lazy" alt="Image description" src="assets/imgs/dyskografia/IMG_0038.jpg" />
+            <img
+              loading="lazy"
+              alt="Image description"
+              src="assets/imgs/dyskografia/IMG_0038.jpg"
+            />
           </a>
           <a href="assets/imgs/dyskografia/IMG_0016.jpg">
-                  <img loading="lazy" alt="Image description" src="assets/imgs/dyskografia/IMG_0016.jpg" />
+            <img
+              loading="lazy"
+              alt="Image description"
+              src="assets/imgs/dyskografia/IMG_0016.jpg"
+            />
           </a>
           <a href="assets/imgs/dyskografia/IMG_0003.jpg">
-                  <img loading="lazy" alt="Image description" src="assets/imgs/dyskografia/IMG_0003.jpg" />
+            <img
+              loading="lazy"
+              alt="Image description"
+              src="assets/imgs/dyskografia/IMG_0003.jpg"
+            />
           </a>
           <a href="assets/imgs/dyskografia/IMG_0031.jpg">
-                  <img loading="lazy" alt="Image description" src="assets/imgs/dyskografia/IMG_0031.jpg" />
+            <img
+              loading="lazy"
+              alt="Image description"
+              src="assets/imgs/dyskografia/IMG_0031.jpg"
+            />
           </a>
           <a href="assets/imgs/dyskografia/IMG_0002.jpg">
-                  <img loading="lazy" alt="Image description" src="assets/imgs/dyskografia/IMG_0002.jpg" />
+            <img
+              loading="lazy"
+              alt="Image description"
+              src="assets/imgs/dyskografia/IMG_0002.jpg"
+            />
           </a>
           <a href="assets/imgs/dyskografia/IMG_0006.jpg">
-                  <img loading="lazy" alt="Image description" src="assets/imgs/dyskografia/IMG_0006.jpg" />
+            <img
+              loading="lazy"
+              alt="Image description"
+              src="assets/imgs/dyskografia/IMG_0006.jpg"
+            />
           </a>
           <a href="assets/imgs/dyskografia/IMG_0007.jpg">
-                  <img loading="lazy" alt="Image description" src="assets/imgs/dyskografia/IMG_0007.jpg" />
+            <img
+              loading="lazy"
+              alt="Image description"
+              src="assets/imgs/dyskografia/IMG_0007.jpg"
+            />
           </a>
           <a href="assets/imgs/dyskografia/1981_Polskie_Nagrania.jpg">
-                  <img loading="lazy" alt="1981 Polskie Nagrania Album Cover" src="assets/imgs/dyskografia/1981_Polskie_Nagrania.jpg" />
+            <img
+              loading="lazy"
+              alt="1981 Polskie Nagrania Album Cover"
+              src="assets/imgs/dyskografia/1981_Polskie_Nagrania.jpg"
+            />
           </a>
           <a href="assets/imgs/dyskografia/1980_Deutsche_Grammophon.jpg">
-                  <img loading="lazy" alt="1980 Deutsche Grammophon Album Cover" src="assets/imgs/dyskografia/1980_Deutsche_Grammophon.jpg" />
+            <img
+              loading="lazy"
+              alt="1980 Deutsche Grammophon Album Cover"
+              src="assets/imgs/dyskografia/1980_Deutsche_Grammophon.jpg"
+            />
           </a>
-     
-        
         </div>
       </div>
     </section>
 
     <section id="bach">
-      <div class="md:grid md:grid-cols-2 md:relative">
+      <div class="md:relative md:grid md:grid-cols-2">
         <div class="flex flex-col justify-center p-4 md:px-10 md:py-20">
           <div class="grid grid-cols-7 items-center gap-1">
-            <img loading="lazy" src="assets/imgs/bach/2.jpg" alt="Bach kolarz">
-            <img loading="lazy" src="assets/imgs/bach/4.jpg" alt="Bach kolarz">
-            <img loading="lazy" src="assets/imgs/bach/5.jpg" alt="Bach kolarz">
-            <img loading="lazy" src="assets/imgs/bach/1.jpg" alt="Bach kolarz">
-            <img loading="lazy" src="assets/imgs/bach/3.jpg" alt="Bach kolarz">
-            <img loading="lazy" src="assets/imgs/bach/6.jpg" alt="Bach kolarz">
-            <img loading="lazy" src="assets/imgs/bach/8.jpg" alt="Bach kolarz">
+            <img
+              loading="lazy"
+              src="assets/imgs/bach/2.jpg"
+              alt="Bach kolarz"
+            />
+            <img
+              loading="lazy"
+              src="assets/imgs/bach/4.jpg"
+              alt="Bach kolarz"
+            />
+            <img
+              loading="lazy"
+              src="assets/imgs/bach/5.jpg"
+              alt="Bach kolarz"
+            />
+            <img
+              loading="lazy"
+              src="assets/imgs/bach/1.jpg"
+              alt="Bach kolarz"
+            />
+            <img
+              loading="lazy"
+              src="assets/imgs/bach/3.jpg"
+              alt="Bach kolarz"
+            />
+            <img
+              loading="lazy"
+              src="assets/imgs/bach/6.jpg"
+              alt="Bach kolarz"
+            />
+            <img
+              loading="lazy"
+              src="assets/imgs/bach/8.jpg"
+              alt="Bach kolarz"
+            />
           </div>
-          <h2 class="pt-14 mb-6 text-5xl text-primary-500">Bach</h2>
+          <h2 class="mb-6 pt-14 text-5xl text-primary-500">Bach</h2>
           <p class="text-lg">
-            <strong class="text-stone-900">Bach’s music has been accompanying Ewa Pobłocka from an very early age.</strong> The artist grew up to the sounds of the St. Matthew and St. John Passion. As a child, she was exposed to Cantatas, accompanying on the piano her mother – an outstanding singer. During her studies at Gdańsk schools and at the academy of music, Ewa Pobłocka presented the compositions of the Leipzig cantor at numerous concerts, competitions, and auditions with greatest passion. The pianist has been developing the art of interpreting the works of the master of polyphony, inter alia, during consultations with one of the greatest performers of Bach’s music of all time – Tatiana Nikolayeva.
+            <strong class="text-stone-900"
+              >Bach’s music has been accompanying Ewa Pobłocka from an very
+              early age.</strong
+            >
+            The artist grew up to the sounds of the St. Matthew and St. John
+            Passion. As a child, she was exposed to Cantatas, accompanying on
+            the piano her mother – an outstanding singer. During her studies at
+            Gdańsk schools and at the academy of music, Ewa Pobłocka presented
+            the compositions of the Leipzig cantor at numerous concerts,
+            competitions, and auditions with greatest passion. The pianist has
+            been developing the art of interpreting the works of the master of
+            polyphony, inter alia, during consultations with one of the greatest
+            performers of Bach’s music of all time – Tatiana Nikolayeva.
 
-            <br><br><strong class="text-stone-900">Ewa Pobłocka began her phonographic adventure with Bach</strong>  still before the Chopin Competition in 1980, making recordings for the Deutsche Grammophon label. After many years of artistic journey, which resulted in, among others, recordings of all the inventions, sinfonias and partitas, the Maestra decided to face the huge two-volume collection of preludes and fugues.
+            <br /><br /><strong class="text-stone-900"
+              >Ewa Pobłocka began her phonographic adventure with Bach</strong
+            >
+            still before the Chopin Competition in 1980, making recordings for
+            the Deutsche Grammophon label. After many years of artistic journey,
+            which resulted in, among others, recordings of all the inventions,
+            sinfonias and partitas, the Maestra decided to face the huge
+            two-volume collection of preludes and fugues.
 
-            <br><br><strong class="text-stone-900">There is no pianist in the world</strong> who would not have encounter Das Wohltemperierte Klavier on artistic path. Comprised of two volumes, this masterpiece is one of the most ground-breaking works in the entire history of music. Dedicated to musical youth athirst for learning, as well as to those who are already advanced in their studies, a collection of twenty-four preludes and fugues requires from the pianist technical mastery and great humility. On the world stages one can rarely hear the full cycle being performed, which – invariably for many years – has been a huge intellectual challenge and a touchstone of artistic maturity. The complete cycle was recorded by Ewa Poblocka as the first among Polish pianists since Wanda Landowska. Published by the Fryderyk Chopin Institute in cooperation with Shigeru Kawai, the two-disc album with the first volume of the collection was awarded the title of the album of the month by the prestigious 'Gramophone' magazine and the highest distinction of 'The Record Geijutsu'. The reviewers noticed, among others, an 'impeccable aesthetic taste', 'outstanding sense of polyphony', 'excellent technique and special skill in constructing musical narrative', stating that Ewa Pobłocka 'fits into the most outstanding tradition of Bach interpretation' and this is 'exactly the point' (Jed Distler). The 'Gramophone' magazine included her recording among the fifty best recordings of Bach's music ever made. This is already the seventh album featuring Bach’s works in the phonographic output of Ewa Pobłocka, whose other interpretations have also been appreciated by critics on a number of occasions. Compiled between 2021 and 2022, the recording of the second volume of the series will be released in late 2022.
+            <br /><br /><strong class="text-stone-900"
+              >There is no pianist in the world</strong
+            >
+            who would not have encounter Das Wohltemperierte Klavier on artistic
+            path. Comprised of two volumes, this masterpiece is one of the most
+            ground-breaking works in the entire history of music. Dedicated to
+            musical youth athirst for learning, as well as to those who are
+            already advanced in their studies, a collection of twenty-four
+            preludes and fugues requires from the pianist technical mastery and
+            great humility. On the world stages one can rarely hear the full
+            cycle being performed, which – invariably for many years – has been
+            a huge intellectual challenge and a touchstone of artistic maturity.
+            The complete cycle was recorded by Ewa Poblocka as the first among
+            Polish pianists since Wanda Landowska. Published by the Fryderyk
+            Chopin Institute in cooperation with Shigeru Kawai, the two-disc
+            album with the first volume of the collection was awarded the title
+            of the album of the month by the prestigious 'Gramophone' magazine
+            and the highest distinction of 'The Record Geijutsu'. The reviewers
+            noticed, among others, an 'impeccable aesthetic taste', 'outstanding
+            sense of polyphony', 'excellent technique and special skill in
+            constructing musical narrative', stating that Ewa Pobłocka 'fits
+            into the most outstanding tradition of Bach interpretation' and this
+            is 'exactly the point' (Jed Distler). The 'Gramophone' magazine
+            included her recording among the fifty best recordings of Bach's
+            music ever made. This is already the seventh album featuring Bach’s
+            works in the phonographic output of Ewa Pobłocka, whose other
+            interpretations have also been appreciated by critics on a number of
+            occasions. Compiled between 2021 and 2022, the recording of the
+            second volume of the series will be released in late 2022.
 
-            <br><br><strong class="text-stone-900">In 2018-2022</strong>, Ewa Pobłocka performed both volumes of the cycle dozens of times on Polish stages (almost all philharmonics and major concert venues) and abroad (Japan, Denmark, Germany, United Kingdom). During this time, she also prepared two cycles of more than a dozen broadcasts devoted to the music of the Leipzig Cantor for the Second Program of Polish Radio: ‘Start with Bach’ (2020-2021) and ‘Bach's Cases’ (2021-2022).
-            
-            <br><br><strong class="text-stone-900">Her next artistic project</strong> with Bach’s music after the monumental Das Wohltemperierte Klavier will be the legendary Goldberg Variations, which she plans to perform for the first time as early as the second half of 2023.
+            <br /><br /><strong class="text-stone-900">In 2018-2022</strong>,
+            Ewa Pobłocka performed both volumes of the cycle dozens of times on
+            Polish stages (almost all philharmonics and major concert venues)
+            and abroad (Japan, Denmark, Germany, United Kingdom). During this
+            time, she also prepared two cycles of more than a dozen broadcasts
+            devoted to the music of the Leipzig Cantor for the Second Program of
+            Polish Radio: ‘Start with Bach’ (2020-2021) and ‘Bach's Cases’
+            (2021-2022).
+
+            <br /><br /><strong class="text-stone-900"
+              >Her next artistic project</strong
+            >
+            with Bach’s music after the monumental Das Wohltemperierte Klavier
+            will be the legendary Goldberg Variations, which she plans to
+            perform for the first time as early as the second half of 2023.
           </p>
         </div>
-        <img loading="lazy" class="p-10 md:p-0 md:sticky md:top-0" src="assets/imgs/bach.jpg" alt="Ewa Pobłocka">
+        <img
+          loading="lazy"
+          class="p-10 md:sticky md:top-0 md:p-0"
+          src="assets/imgs/bach.jpg"
+          alt="Ewa Pobłocka"
+        />
       </div>
     </section>
 
     <section id="aktualnosci">
       <div class="md:grid md:grid-cols-2">
-        <img loading="lazy" class="p-10 md:p-0" src="assets/imgs/nauka.jpg" alt="Ewa Pobłocka">
+        <img
+          loading="lazy"
+          class="p-10 md:p-0"
+          src="assets/imgs/nauka.jpg"
+          alt="Ewa Pobłocka"
+        />
         <div class="flex flex-col justify-center p-4 md:p-10">
           <h2 class="mb-6 text-5xl text-primary-500">News</h2>
+
+          <small class="text-slate-400">20.05.2024</small>
+          <h3 class="py-2 text-2xl">Tour in Japan</h3>
+          <p class="mb-10">
+            On 20 May 2024 Professor Ewa Pobłocka began her tour in Japan. As
+            part of it, she will play concerts among others in Niigata and
+            Omotesando. She will also give a masterclass at the Kunitachi
+            College of Music and a lecture at the Tokyo College of Music.
+          </p>
+
+          <small class="text-slate-400">14.05.2024</small>
+          <h3 class="py-2 text-2xl">
+            Juror of 1st Brazilian Chopin Competition
+          </h3>
+          <p class="mb-10">
+            On 8 -13 May 2024 Professor Ewa Pobłocka served as a Juror of 1st
+            Brazilian Chopin Competition, whose main organiser is the Chopin
+            Society of Brazil and whose partner is the Fryderyk Chopin National
+            Institute. <br />The winner of the Competition can benefit from a
+            simplified qualification procedure for the 19th International Chopin
+            Competition, which gives him or her the opportunity to skip the
+            selection phase based on DVD recordings.
+          </p>
+
           <small class="text-slate-400">12.02.2024</small>
           <h3 class="py-2 text-2xl">Master classes in Vienna</h3>
-          <p class="mb-10">On 9 - 15 July 2024, Professor Ewa Pobłocka will conduct master classes in Vienna as part of the European Music Institute Vienna. More information in the link below:
-            <br><a class="text-primary-500" href="https://emi-vienna.com/en/ewa-poblocka/">https://emi-vienna.com/en/ewa-poblocka/</a></p>
+          <p class="mb-10">
+            On 9 - 15 July 2024, Professor Ewa Pobłocka will conduct master
+            classes in Vienna as part of the European Music Institute Vienna.
+            More information in the link below: <br /><a
+              class="text-primary-500"
+              href="https://emi-vienna.com/en/ewa-poblocka/"
+              >https://emi-vienna.com/en/ewa-poblocka/</a
+            >
+          </p>
 
           <small class="text-slate-400">20.02.2024</small>
-          <h3 class="py-2 text-2xl">Tianjin Juilliard Piano Festival 2024 master classes</h3>
-          <p class="mb-10">On 4-11 August 2024 Professor Ewa Pobłocka will conduct master classes as part of the Tianjin Juilliard Piano Festival 2024. This event is organized by The Tianjin Juilliard - a branch of famous The Juilliard School located in New York City. 
-          <br><a class="text-primary-500" href="https://www.tianjinjuilliard.edu.cn/tjpf">https://www.tianjinjuilliard.edu.cn/tjpf</a></p>
+          <h3 class="py-2 text-2xl">
+            Tianjin Juilliard Piano Festival 2024 master classes
+          </h3>
+          <p class="mb-10">
+            On 4-11 August 2024 Professor Ewa Pobłocka will conduct master
+            classes as part of the Tianjin Juilliard Piano Festival 2024. This
+            event is organized by The Tianjin Juilliard - a branch of famous The
+            Juilliard School located in New York City. <br /><a
+              class="text-primary-500"
+              href="https://www.tianjinjuilliard.edu.cn/tjpf"
+              >https://www.tianjinjuilliard.edu.cn/tjpf</a
+            >
+          </p>
 
           <small class="text-slate-400">03.03.2024</small>
           <h3 class="py-2 text-2xl">Master classes in Brescia</h3>
-          <p class="mb-10">On 16 - 21 September 2024 Professor Ewa Pobłocka will conduct master classes as part of the IX International Festival & Summer Academy. The master classes will take place in Italy, in beautiful Brescia. Applications are accepted until 30 July 2024.
-          <br><a class="text-primary-500" href="https://www.talentsummercourses.it">https://www.talentsummercourses.it</a></p>
-
+          <p class="mb-10">
+            On 16 - 21 September 2024 Professor Ewa Pobłocka will conduct master
+            classes as part of the IX International Festival & Summer Academy.
+            The master classes will take place in Italy, in beautiful Brescia.
+            Applications are accepted until 30 July 2024. <br /><a
+              class="text-primary-500"
+              href="https://www.talentsummercourses.it"
+              >https://www.talentsummercourses.it</a
+            >
+          </p>
         </div>
       </div>
     </section>
 
-    <section class="py-20 bg-primary-100" id="kontakt">
-      <div class="container mx-auto p-10 bg-white text-center">
+    <section class="bg-primary-100 py-20" id="kontakt">
+      <div class="container mx-auto bg-white p-10 text-center">
         <h2 class="mb-6 text-5xl text-primary-500">Contact</h2>
-        <p class="text-lg max-w-4xl mx-auto">
-            <strong class="text-stone-900">We invite you to contact us</strong> - For concert organizers, master course participants, and anyone interested in cooperation or obtaining additional information.
+        <p class="mx-auto max-w-4xl text-lg">
+          <strong class="text-stone-900">We invite you to contact us</strong> -
+          For concert organizers, master course participants, and anyone
+          interested in cooperation or obtaining additional information.
         </p>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 pt-12">
+
+        <div class="grid grid-cols-1 gap-4 pt-12 md:grid-cols-2">
           <div>
-            <h3 class="font-bold text-xl">Marcin Gorayski</h3>
-            <p>enterMezzo Artistic Agency</p>
-            <a href="mailto:entermezzo@op.pl" class="text-primary-500">entermezzo@op.pl</a><br>
-            <a href="tel:+48500659199" class="text-primary-500">tel. 500 659 199</a>
+            <h3 class="text-xl font-bold">Mateusz Hyży</h3>
+            <a href="mailto:mateusz.hyzy@icloud.com" class="text-primary-500"
+              >mateusz.hyzy@icloud.com</a
+            ><br />
+            <a href="tel:+48507139432" class="text-primary-500"
+              >tel. 507 139 432</a
+            >
           </div>
 
           <div>
-            <h3 class="font-bold text-xl">Mateusz Hyży</h3>
-            <a href="mailto:mateusz.hyzy@icloud.com" class="text-primary-500">mateusz.hyzy@icloud.com</a><br>
-            <a href="tel:+48507139432" class="text-primary-500">tel. 507 139 432</a>
-          </div>
-      
-          <div>
-            <h3 class="font-bold text-xl">Email for the students</h3>
-            <a href="mailto:prof.epoblocka@yahoo.com" class="text-primary-500">prof.epoblocka@yahoo.com</a>
+            <a href="mailto:prof.epoblocka@yahoo.com" class="text-primary-500"
+              >prof.epoblocka@yahoo.com</a
+            >
           </div>
         </div>
-        
       </div>
     </section>
-
 
     <footer class="py-6">
-      <div class="container px-4 mx-auto">
-        <div class="flex justify-between items-end text-sm">
+      <div class="container mx-auto px-4">
+        <div class="flex items-end justify-between text-sm">
           <p>Copyright ©2024 Ewa Pobłocka. All Rights Reserved.</p>
           <p>Zdjęcia - Bartek Barczyk</p>
         </div>

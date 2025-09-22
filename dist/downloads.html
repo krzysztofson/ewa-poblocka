@@ -5,118 +5,207 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/css/main.css" />
     <title>Ewa Pobłocka</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <script src="./assets/js/main.js" defer="defer"></script>
     <script src="
     https://cdn.jsdelivr.net/npm/lightgallery.js@1.4.0/dist/js/lightgallery.min.js
     "></script>
-    <link href="
+    <link
+      href="
     https://cdn.jsdelivr.net/npm/lightgallery.js@1.4.0/dist/css/lightgallery.min.css
-    " rel="stylesheet">
+    "
+      rel="stylesheet"
+    />
   </head>
 
   <body class="font-main">
-
-    <nav class="fixed w-full top-0 bg-stone-900 text py-4 shadow z-20">
-        <div class="relative">
-          <div class="container px-4 mx-auto flex items-center justify-between">
-            <a href="index.html" class="flex-shrink-0 text-xl font-bold text-primary-200">Ewa Pobłocka</a>
-            <div class="js-nav hidden absolute top-11 w-full inset-x-0 mx-auto py-10 space-y-5 lg:space-y-0 text-sm text-center font-light text-slate-100 lg:relative lg:flex lg:top-0 lg:py-0 lg:bg-stone-900 lg:space-x-5 lg:text-right bg-stone-800 flex-col lg:flex-row lg:items-center lg:justify-end">
-              <a href="en.html#about">Biography</a>
-              <a href="en.html#dyskografia">Discography</a>
-              <a href="galeria.html">Gallery</a>
-              <a href="en.html#bach">Bach</a>
-              <a href="downloads.html">Download</a>
-              <a href="en.html#aktualnosci">News</a>
-              <a href="#kontakt">Contact</a>
-              <a href="index.html"><img src="assets/imgs/pl.png" class="w-4 block"></a>
-            </div>
-            <button class="cursor-pointer js-nav-btn lg:hidden">
-              <?xml version="1.0" encoding="utf-8"?>
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M4 5C3.44772 5 3 5.44772 3 6C3 6.55228 3.44772 7 4 7H20C20.5523 7 21 6.55228 21 6C21 5.44772 20.5523 5 20 5H4ZM7 12C7 11.4477 7.44772 11 8 11H20C20.5523 11 21 11.4477 21 12C21 12.5523 20.5523 13 20 13H8C7.44772 13 7 12.5523 7 12ZM13 18C13 17.4477 13.4477 17 14 17H20C20.5523 17 21 17.4477 21 18C21 18.5523 20.5523 19 20 19H14C13.4477 19 13 18.5523 13 18Z" fill="#fff"/>
-              </svg>
-            </button>
+    <nav class="text fixed top-0 z-20 w-full bg-stone-900 py-4 shadow">
+      <div class="relative">
+        <div class="container mx-auto flex items-center justify-between px-4">
+          <a
+            href="index.html"
+            class="flex-shrink-0 text-xl font-bold text-primary-200"
+            >Ewa Pobłocka</a
+          >
+          <div
+            class="js-nav absolute inset-x-0 top-11 mx-auto hidden w-full flex-col space-y-5 bg-stone-800 py-10 text-center text-sm font-light text-slate-100 lg:relative lg:top-0 lg:flex lg:flex-row lg:items-center lg:justify-end lg:space-x-5 lg:space-y-0 lg:bg-stone-900 lg:py-0 lg:text-right"
+          >
+            <a href="en.html#about">Biography</a>
+            <a href="en.html#dyskografia">Discography</a>
+            <a href="galeria.html">Gallery</a>
+            <a href="en.html#bach">Bach</a>
+            <a href="downloads.html">Download</a>
+            <a href="en.html#aktualnosci">News</a>
+            <a href="#kontakt">Contact</a>
+            <a href="index.html"
+              ><img src="assets/imgs/pl.png" class="block w-4"
+            /></a>
           </div>
+          <button class="js-nav-btn cursor-pointer lg:hidden">
+            <?xml version="1.0" encoding="utf-8"?>
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="white"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M4 5C3.44772 5 3 5.44772 3 6C3 6.55228 3.44772 7 4 7H20C20.5523 7 21 6.55228 21 6C21 5.44772 20.5523 5 20 5H4ZM7 12C7 11.4477 7.44772 11 8 11H20C20.5523 11 21 11.4477 21 12C21 12.5523 20.5523 13 20 13H8C7.44772 13 7 12.5523 7 12ZM13 18C13 17.4477 13.4477 17 14 17H20C20.5523 17 21 17.4477 21 18C21 18.5523 20.5523 19 20 19H14C13.4477 19 13 18.5523 13 18Z"
+                fill="#fff"
+              />
+            </svg>
+          </button>
         </div>
-      </nav>
+      </div>
+    </nav>
 
-    <header class="flex text-center h-screen lg:h-auto lg:aspect-video bg-cover bg-no-repeat bg-top" style="background-image: url('assets/imgs/header.jpg');">
-    </header>
+    <header
+      class="flex h-screen bg-cover bg-top bg-no-repeat text-center lg:aspect-video lg:h-auto"
+      style="background-image: url('assets/imgs/header.jpg')"
+    ></header>
 
-
-    <section class="py-20 bg-primary-100" id="dopobrania">
-      <div class="container mx-auto p-10 bg-white">
+    <section class="bg-primary-100 py-20" id="dopobrania">
+      <div class="container mx-auto bg-white p-10">
         <h2 class="mb-6 text-5xl text-primary-500">From my drawer:</h2>
-        <p class="text-lg pb-10">
-          <strong class="text-stone-900">Ewa Pobłocka also willingly devotes herself to literary activities</strong> – she has published her essays in, among others: Zeszty Literackie, Kwartalnik Artystyczny Wyspa and Kwartalnik Literacki Bliza.  Her first book, ‘Forte-piano’, was released in 2021 by the publishing house Słowa/obraz terytoria. She is working on another book, devoted to Bach's significance in her artistic path.
+        <p class="pb-10 text-lg">
+          <strong class="text-stone-900"
+            >Ewa Pobłocka also willingly devotes herself to literary
+            activities</strong
+          >
+          – she has published her essays in, among others: Zeszty Literackie,
+          Kwartalnik Artystyczny Wyspa and Kwartalnik Literacki Bliza. Her first
+          book, ‘Forte-piano’, was released in 2021 by the publishing house
+          Słowa/obraz terytoria. She is working on another book, devoted to
+          Bach's significance in her artistic path.
         </p>
-        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-            <a href="assets/download/Dzienniki-japonskie-1.pdf" target="_blank" class="bg-primary-500 text-white p-4 rounded-lg text-center">Dzienniki Japońskie 1</a>
-            <a href="assets/download/Dzienniki-japonskie-2.pdf" target="_blank" class="bg-primary-500 text-white p-4 rounded-lg text-center">Dzienniki Japońskie 2</a>
-            <a href="assets/download/Dzienniki-japonskie-3.pdf" target="_blank" class="bg-primary-500 text-white p-4 rounded-lg text-center">Dzienniki Japońskie 3</a>
-            <a href="assets/download/Dzienniki-japonskie-4.pdf" target="_blank" class="bg-primary-500 text-white p-4 rounded-lg text-center">Dzienniki Japońskie 4</a>
-            <a href="assets/download/Dzienniki-japonskie-5.pdf" target="_blank" class="bg-primary-500 text-white p-4 rounded-lg text-center">Dzienniki Japońskie 5</a>
-            <a href="assets/download/Dzienniki-japonskie-cd.pdf" target="_blank" class="bg-primary-500 text-white p-4 rounded-lg text-center">Dzienniki Japońskie cd</a>
-            <a href="assets/download/Cisza.pdf" target="_blank" class="bg-primary-500 text-white p-4 rounded-lg text-center">Cisza</a>
-            <a href="assets/download/Moj-Lutoslawski.pdf" target="_blank" class="bg-primary-500 text-white p-4 rounded-lg text-center">Mój Lutosławski</a>
+        <div class="grid grid-cols-2 gap-6 md:grid-cols-3 lg:grid-cols-4">
+          <a
+            href="assets/download/Dzienniki-japonskie-1.pdf"
+            target="_blank"
+            class="rounded-lg bg-primary-500 p-4 text-center text-white"
+            >Dzienniki Japońskie 1</a
+          >
+          <a
+            href="assets/download/Dzienniki-japonskie-2.pdf"
+            target="_blank"
+            class="rounded-lg bg-primary-500 p-4 text-center text-white"
+            >Dzienniki Japońskie 2</a
+          >
+          <a
+            href="assets/download/Dzienniki-japonskie-3.pdf"
+            target="_blank"
+            class="rounded-lg bg-primary-500 p-4 text-center text-white"
+            >Dzienniki Japońskie 3</a
+          >
+          <a
+            href="assets/download/Dzienniki-japonskie-4.pdf"
+            target="_blank"
+            class="rounded-lg bg-primary-500 p-4 text-center text-white"
+            >Dzienniki Japońskie 4</a
+          >
+          <a
+            href="assets/download/Dzienniki-japonskie-5.pdf"
+            target="_blank"
+            class="rounded-lg bg-primary-500 p-4 text-center text-white"
+            >Dzienniki Japońskie 5</a
+          >
+          <a
+            href="assets/download/Dzienniki-japonskie-cd.pdf"
+            target="_blank"
+            class="rounded-lg bg-primary-500 p-4 text-center text-white"
+            >Dzienniki Japońskie cd</a
+          >
+          <a
+            href="assets/download/Cisza.pdf"
+            target="_blank"
+            class="rounded-lg bg-primary-500 p-4 text-center text-white"
+            >Cisza</a
+          >
+          <a
+            href="assets/download/Moj-Lutoslawski.pdf"
+            target="_blank"
+            class="rounded-lg bg-primary-500 p-4 text-center text-white"
+            >Mój Lutosławski</a
+          >
         </div>
-
-        
       </div>
     </section>
 
-
-    <section class="py-20 bg-primary-100" id="dopobrania">
-      <div class="container mx-auto p-10 bg-white">
-        <h2 class="mb-6 text-5xl text-primary-500 text-right">Reviews</h2>
-        <p class="text-lg text-right">
-          <strong class="text-stone-900">Ewa Pobłocka's critically acclaimed phonographic output includes over 50 albums,</strong> covering solo, chamber and concert repertoire from the baroque to the present, performed on contemporary and period instruments from Chopin's era. They were recorded, among others, for Deutsche Grammophon, Pony Canyon, Victor JVC, Conifer Records, Polskie Nagrania "Muza", NIFC, CD Accord and BeArTon. She was the first Polish pianist to record both volumes of Bach's Das Wohltemperierte Klavier (NIFC 2018, 2023). The album with the first volume was included on the list of the 50 best Bach recordings in history published by the prestigious "Gramophone" magazine, and was also awarded by this magazine as the album of the month.
+    <section class="bg-primary-100 py-20" id="dopobrania">
+      <div class="container mx-auto bg-white p-10">
+        <h2 class="mb-6 text-right text-5xl text-primary-500">Reviews</h2>
+        <p class="text-right text-lg">
+          <strong class="text-stone-900"
+            >Ewa Pobłocka's critically acclaimed phonographic output includes
+            over 50 albums,</strong
+          >
+          covering solo, chamber and concert repertoire from the baroque to the
+          present, performed on contemporary and period instruments from
+          Chopin's era. They were recorded, among others, for Deutsche
+          Grammophon, Pony Canyon, Victor JVC, Conifer Records, Polskie Nagrania
+          "Muza", NIFC, CD Accord and BeArTon. She was the first Polish pianist
+          to record both volumes of Bach's Das Wohltemperierte Klavier (NIFC
+          2018, 2023). The album with the first volume was included on the list
+          of the 50 best Bach recordings in history published by the prestigious
+          "Gramophone" magazine, and was also awarded by this magazine as the
+          album of the month.
         </p>
-        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 pt-10">
-          <a href="assets/download/recenzje/Jed-Distler-Gramophone.pdf" target="_blank" class="bg-primary-500 text-white p-4 rounded-lg text-center">Jed Distler Gramophone</a>
-      </div>
-        
+        <div class="grid grid-cols-2 gap-6 pt-10 md:grid-cols-3 lg:grid-cols-4">
+          <a
+            href="assets/download/recenzje/Jed-Distler-Gramophone.pdf"
+            target="_blank"
+            class="rounded-lg bg-primary-500 p-4 text-center text-white"
+            >Jed Distler Gramophone</a
+          >
+        </div>
       </div>
     </section>
 
-
-    <section class="py-20 bg-primary-100" id="kontakt">
-      <div class="container mx-auto p-10 bg-white text-center">
+    <section class="bg-primary-100 py-20" id="kontakt">
+      <div class="container mx-auto bg-white p-10 text-center">
         <h2 class="mb-6 text-5xl text-primary-500">Kontakt</h2>
-        <p class="text-lg max-w-4xl mx-auto">
-          <strong class="text-stone-900">Zapraszamy do kontaktu</strong>  – Dla organizatorów koncertów, uczestników kursów mistrzowskich oraz wszystkich zainteresowanych współpracą lub uzyskaniem dodatkowych informacji.
+        <p class="mx-auto max-w-4xl text-lg">
+          <strong class="text-stone-900">Zapraszamy do kontaktu</strong> – Dla
+          organizatorów koncertów, uczestników kursów mistrzowskich oraz
+          wszystkich zainteresowanych współpracą lub uzyskaniem dodatkowych
+          informacji.
         </p>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 pt-12">
+
+        <div class="grid grid-cols-1 gap-4 pt-12 md:grid-cols-2">
           <div>
-            <h3 class="font-bold text-xl">Marcin Gorayski</h3>
-            <p>Agencja Artystyczna enterMezzo</p>
-            <a href="mailto:entermezzo@op.pl" class="text-primary-500">entermezzo@op.pl</a><br>
-            <a href="tel:+48500659199" class="text-primary-500">tel. 500 659 199</a>
+            <h3 class="text-xl font-bold">Mateusz Hyży</h3>
+            <a href="mailto:mateusz.hyzy@icloud.com" class="text-primary-500"
+              >mateusz.hyzy@icloud.com</a
+            ><br />
+            <a href="tel:+48507139432" class="text-primary-500"
+              >tel. 507 139 432</a
+            >
           </div>
 
           <div>
-            <h3 class="font-bold text-xl">Mateusz Hyży</h3>
-            <a href="mailto:mateusz.hyzy@icloud.com" class="text-primary-500">mateusz.hyzy@icloud.com</a><br>
-            <a href="tel:+48507139432" class="text-primary-500">tel. 507 139 432</a>
-          </div>
-      
-          <div>
-            <h3 class="font-bold text-xl">Kontakt dla studentów</h3>
-            <a href="mailto:prof.epoblocka@yahoo.com" class="text-primary-500">prof.epoblocka@yahoo.com</a>
+            <a href="mailto:prof.epoblocka@yahoo.com" class="text-primary-500"
+              >prof.epoblocka@yahoo.com</a
+            >
           </div>
         </div>
-        
       </div>
     </section>
-
 
     <footer class="py-6">
-      <div class="container px-4 mx-auto">
-        <div class="flex justify-between items-end text-sm">
+      <div class="container mx-auto px-4">
+        <div class="flex items-end justify-between text-sm">
           <p>Copyright ©2024 Ewa Pobłocka. All Rights Reserved.</p>
           <p>Zdjęcia - Bartek Barczyk</p>
         </div>

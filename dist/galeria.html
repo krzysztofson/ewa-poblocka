@@ -5,26 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/css/main.css" />
     <title>Ewa Pobłocka</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <script src="./assets/js/main.js" defer="defer"></script>
     <script src="
     https://cdn.jsdelivr.net/npm/lightgallery.js@1.4.0/dist/js/lightgallery.min.js
     "></script>
-    <link href="
+    <link
+      href="
     https://cdn.jsdelivr.net/npm/lightgallery.js@1.4.0/dist/css/lightgallery.min.css
-    " rel="stylesheet">
+    "
+      rel="stylesheet"
+    />
   </head>
 
   <body class="font-main">
-
-    <nav class="fixed w-full top-0 bg-stone-900 text py-4 shadow z-20">
+    <nav class="text fixed top-0 z-20 w-full bg-stone-900 py-4 shadow">
       <div class="relative">
-        <div class="container px-4 mx-auto flex items-center justify-between">
-          <a href="index.html" class="flex-shrink-0 text-xl font-bold text-primary-200">Ewa Pobłocka</a>
-          <div class="js-nav hidden absolute top-11 w-full inset-x-0 mx-auto py-10 space-y-5 text-sm text-center font-light text-slate-100 lg:relative lg:block lg:top-0 lg:py-0 lg:bg-stone-900 lg:space-x-5 lg:text-right bg-stone-800 flex-col">
+        <div class="container mx-auto flex items-center justify-between px-4">
+          <a
+            href="index.html"
+            class="flex-shrink-0 text-xl font-bold text-primary-200"
+            >Ewa Pobłocka</a
+          >
+          <div
+            class="js-nav absolute inset-x-0 top-11 mx-auto hidden w-full flex-col space-y-5 bg-stone-800 py-10 text-center text-sm font-light text-slate-100 lg:relative lg:top-0 lg:block lg:space-x-5 lg:bg-stone-900 lg:py-0 lg:text-right"
+          >
             <a href="index.html#about">Biografia</a>
             <a href="index.html#dyskografia">Dyskografia</a>
             <a href="galeria.html">Galeria</a>
@@ -33,202 +47,561 @@
             <a href="index.html#aktualnosci">Aktualności</a>
             <a href="#kontakt">Kontakt</a>
           </div>
-          <button class="cursor-pointer js-nav-btn lg:hidden">
+          <button class="js-nav-btn cursor-pointer lg:hidden">
             <?xml version="1.0" encoding="utf-8"?>
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M4 5C3.44772 5 3 5.44772 3 6C3 6.55228 3.44772 7 4 7H20C20.5523 7 21 6.55228 21 6C21 5.44772 20.5523 5 20 5H4ZM7 12C7 11.4477 7.44772 11 8 11H20C20.5523 11 21 11.4477 21 12C21 12.5523 20.5523 13 20 13H8C7.44772 13 7 12.5523 7 12ZM13 18C13 17.4477 13.4477 17 14 17H20C20.5523 17 21 17.4477 21 18C21 18.5523 20.5523 19 20 19H14C13.4477 19 13 18.5523 13 18Z" fill="#fff"/>
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="white"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M4 5C3.44772 5 3 5.44772 3 6C3 6.55228 3.44772 7 4 7H20C20.5523 7 21 6.55228 21 6C21 5.44772 20.5523 5 20 5H4ZM7 12C7 11.4477 7.44772 11 8 11H20C20.5523 11 21 11.4477 21 12C21 12.5523 20.5523 13 20 13H8C7.44772 13 7 12.5523 7 12ZM13 18C13 17.4477 13.4477 17 14 17H20C20.5523 17 21 17.4477 21 18C21 18.5523 20.5523 19 20 19H14C13.4477 19 13 18.5523 13 18Z"
+                fill="#fff"
+              />
             </svg>
           </button>
         </div>
       </div>
     </nav>
 
-    <header class="flex text-center h-screen lg:h-auto lg:aspect-video bg-cover bg-no-repeat bg-top" style="background-image: url('assets/imgs/header3.jpg');">
-    </header>
+    <header
+      class="flex h-screen bg-cover bg-top bg-no-repeat text-center lg:aspect-video lg:h-auto"
+      style="background-image: url('assets/imgs/header3.jpg')"
+    ></header>
 
+    <section class="bg-primary-100 py-20" id="dyskografia">
+      <div class="container mx-auto bg-white p-10">
+        <h2 class="mb-6 text-5xl text-primary-500">Galeria</h2>
+        <div
+          class="grid grid-cols-4 gap-5 pt-10 md:grid-cols-6"
+          id="lightgallery"
+        >
+          <a
+            title="Gdańsk, 1978/1979 r."
+            href="assets/imgs/galeria/Gdańsk, 1978:1979 r..jpeg"
+          >
+            <img
+              class="aspect-square object-cover"
+              loading="lazy"
+              alt="Gdańsk, 1978/1979 r."
+              src="assets/imgs/galeria/Gdańsk, 1978:1979 r..jpeg"
+            />
+          </a>
+          <a
+            title="Gdańsk, nieopodal Kaplicy Królewskiej i  Kościoła Mariackiego, 1979/1978 r."
+            href="assets/imgs/galeria/gdansk-niopodal.jpeg"
+          >
+            <img
+              class="aspect-square object-cover"
+              loading="lazy"
+              alt="Gdańsk, nieopodal Kaplicy Królewskiej i  Kościoła Mariackiego, 1979:1978 r."
+              src="assets/imgs/galeria/gdansk-niopodal.jpeg"
+            />
+          </a>
+          <a
+            title="Kazimierz Kord wręcza dyplom laureata, październik 1980 r."
+            href="assets/imgs/galeria/Kazimierz-Kord.jpeg"
+          >
+            <img
+              class="aspect-square object-cover"
+              loading="lazy"
+              alt="Kazimierz Kord wręcza dyplom laureata, październik 1980 r."
+              src="assets/imgs/galeria/Kazimierz-Kord.jpeg"
+            />
+          </a>
+          <a
+            title="Koncert w Filharmonii Bałtyckiej w Gdańsku, grudzień 2018 r."
+            href="assets/imgs/galeria/Koncert-w-Filharmonii.jpeg"
+          >
+            <img
+              class="aspect-square object-cover"
+              loading="lazy"
+              alt="Koncert w Filharmonii Bałtyckiej w Gdańsku, grudzień 2018 r."
+              src="assets/imgs/galeria/Koncert-w-Filharmonii.jpeg"
+            />
+          </a>
+          <a
+            title="Laureaci 10. Międzynarodowego Konkursu Pianistycznego im. Fryderyka Chopina w Warszawie"
+            href="assets/imgs/galeria/Laureaci 10. Międzynarodowego Konkursu Pianistycznego im. Fryderyka Chopina w Warszawie, 1980 .jpeg"
+          >
+            <img
+              class="aspect-square object-cover"
+              loading="lazy"
+              alt="Laureaci 10. Międzynarodowego Konkursu Pianistycznego im. Fryderyka Chopina w Warszawie"
+              src="assets/imgs/galeria/Laureaci 10. Międzynarodowego Konkursu Pianistycznego im. Fryderyka Chopina w Warszawie, 1980 .jpeg"
+            />
+          </a>
+          <a
+            title="Po koncercie inauguracyjnym 4. Festiwalu Chopin i jego Europa"
+            href="assets/imgs/galeria/Po koncercie inauguracyjnym 4. Festiwalu Chopin i jego Europa.jpeg"
+          >
+            <img
+              class="aspect-square object-cover"
+              loading="lazy"
+              alt="Po koncercie inauguracyjnym 4. Festiwalu Chopin i jego Europa"
+              src="assets/imgs/galeria/Po koncercie inauguracyjnym 4. Festiwalu Chopin i jego Europa.jpeg"
+            />
+          </a>
+          <a
+            title="Po próbie przed recitalem w Filharmonii Narodowej, Warszawa, listopad 2017 r."
+            href="assets/imgs/galeria/Po probie przed recitalem w Filharmonii  Narodowej, Warszawa, listopad 2017 r..jpeg"
+          >
+            <img
+              class="aspect-square object-cover"
+              loading="lazy"
+              alt="Po próbie przed recitalem w Filharmonii Narodowej, Warszawa, listopad 2017 r."
+              src="assets/imgs/galeria/Po probie przed recitalem w Filharmonii  Narodowej, Warszawa, listopad 2017 r..jpeg"
+            />
+          </a>
+          <a
+            title="Po recitalu w Martigny, z Alexis Golovin, Marta ̨ Argerich, Akiko Ebi, październik 2018 r."
+            href="assets/imgs/galeria/Po-recitalu.jpeg"
+          >
+            <img
+              class="aspect-square object-cover"
+              loading="lazy"
+              alt="Po recitalu w Martigny, z Alexis Golovin, Marta ̨ Argerich, Akiko Ebi, październik 2018 r."
+              src="assets/imgs/galeria/Po-recitalu.jpeg"
+            />
+          </a>
+          <a
+            title="Podczas lekcji mistrzowskich z Conradem Hansenem, 1981-1982"
+            href="assets/imgs/galeria/Podczas lekcji mistrzowskich z Conradem Hansenem, 1981-1982.jpeg"
+          >
+            <img
+              class="aspect-square object-cover"
+              loading="lazy"
+              alt="Podczas lekcji mistrzowskich z Conradem Hansenem, 1981-1982"
+              src="assets/imgs/galeria/Podczas lekcji mistrzowskich z Conradem Hansenem, 1981-1982.jpeg"
+            />
+          </a>
+          <a
+            title="Podczas próby z Maestro Kazimierzem Kordem"
+            href="assets/imgs/galeria/Podczas-proby.jpeg"
+          >
+            <img
+              class="aspect-square object-cover"
+              loading="lazy"
+              alt="Podczas próby z Maestro Kazimierzem Kordem"
+              src="assets/imgs/galeria/Podczas-proby.jpeg"
+            />
+          </a>
+          <a
+            title="Próba z Maestro Kazimierzem Kordem"
+            href="assets/imgs/galeria/Próba z Maestro Kazimierzem Kordem.jpeg"
+          >
+            <img
+              class="aspect-square object-cover"
+              loading="lazy"
+              alt="Próba z Maestro Kazimierzem Kordem"
+              src="assets/imgs/galeria/Próba z Maestro Kazimierzem Kordem.jpeg"
+            />
+          </a>
+          <a
+            title="Przesłuchania do 10. Międzynarodowego Konkursu Pianistycznego im. Fryderyka Chopina w Warszawie, 1980 r."
+            href="assets/imgs/galeria/Przesłuchania do 10. Miedzy narodowego Konkursu Pianistycznego im. Fryderyka Chopina w Warszawie, 1980 r.jpg"
+          >
+            <img
+              class="aspect-square object-cover"
+              loading="lazy"
+              alt="Przesłuchania do 10. Międzynarodowego Konkursu Pianistycznego im. Fryderyka Chopina w Warszawie, 1980 r."
+              src="assets/imgs/galeria/Przesłuchania do 10. Miedzy narodowego Konkursu Pianistycznego im. Fryderyka Chopina w Warszawie, 1980 r.jpg"
+            />
+          </a>
+          <a
+            title="Recital w Bunka Kaikan, Tokio, październik 2018 r."
+            href="assets/imgs/galeria/Recital-Bunka.jpeg"
+          >
+            <img
+              class="aspect-square object-cover"
+              loading="lazy"
+              alt="Recital w Bunka Kaikan, Tokio, październik 2018 r."
+              src="assets/imgs/galeria/Recital-Bunka.jpeg"
+            />
+          </a>
+          <a
+            title="Recital w Radziejowicach, grudzień 2018 r."
+            href="assets/imgs/galeria/Recital-Radziejowicach.jpeg"
+          >
+            <img
+              class="aspect-square object-cover"
+              loading="lazy"
+              alt="Recital w Radziejowicach, grudzień 2018 r."
+              src="assets/imgs/galeria/Recital-Radziejowicach.jpeg"
+            />
+          </a>
+          <a
+            title="Recital z Dang Thai Sonem, 6. Festiwal Chopin i jego Europa"
+            href="assets/imgs/galeria/Recital z Dang Thai Sonem, 6. Festiwal Chopin i jego Europa.jpeg"
+          >
+            <img
+              class="aspect-square object-cover"
+              loading="lazy"
+              alt="Recital z Dang Thai Sonem, 6. Festiwal Chopin i jego Europa"
+              src="assets/imgs/galeria/Recital z Dang Thai Sonem, 6. Festiwal Chopin i jego Europa.jpeg"
+            />
+          </a>
+          <a
+            title="Sopot, 1962 r. Początki."
+            href="assets/imgs/galeria/Sopot-1962.png"
+          >
+            <img
+              class="aspect-square object-cover"
+              loading="lazy"
+              alt="Sopot, 1962 r. Początki."
+              src="assets/imgs/galeria/Sopot-1962.png"
+            />
+          </a>
+          <a
+            title="Trio Panufnika w Galerii Zachęta z Markiem Mosiem i Andrzejem Bauerem"
+            href="assets/imgs/galeria/Trio Panufnika w Galerii Zacheta z M arkiem Mosiem i Andrzejem Bauerem.jpeg"
+          >
+            <img
+              class="aspect-square object-cover"
+              loading="lazy"
+              alt="Trio Panufnika w Galerii Zachęta z Markiem Mosiem i Andrzejem Bauerem"
+              src="assets/imgs/galeria/Trio Panufnika w Galerii Zacheta z M arkiem Mosiem i Andrzejem Bauerem.jpeg"
+            />
+          </a>
+          <a
+            title="Z Arimune Yamamoto, Gabrielą Blicharz i  Lechem Dudzikiem po sesji nagraniowej"
+            href="assets/imgs/galeria/Z Arimune Yamamoto, Gabriela Blicharz i  Lechem Dudzikiem po sesji nagraniowej.jpeg"
+          >
+            <img
+              class="aspect-square object-cover"
+              loading="lazy"
+              alt="Z Arimune Yamamoto, Gabrielą Blicharz i  Lechem Dudzikiem po sesji nagraniowej"
+              src="assets/imgs/galeria/Z Arimune Yamamoto, Gabriela Blicharz i  Lechem Dudzikiem po sesji nagraniowej.jpeg"
+            />
+          </a>
+          <a
+            title="Z Chelsea Guo podczas Frost Chopin Festival, lipiec 2019 r."
+            href="assets/imgs/galeria/Z Chelsea Guo podczas Frost Chopin Festival, lipiec 2019 r..jpeg"
+          >
+            <img
+              class="aspect-square object-cover"
+              loading="lazy"
+              alt="Z Chelsea Guo podczas Frost Chopin Festival, lipiec 2019 r."
+              src="assets/imgs/galeria/Z Chelsea Guo podczas Frost Chopin Festival, lipiec 2019 r..jpeg"
+            />
+          </a>
+          <a
+            title="Z Kei Itoch w Kioi Hall, Lipiec 2019 r."
+            href="assets/imgs/galeria/Z Kei Itoch w Kioi Hall, Lipiec 2019 r..jpeg"
+          >
+            <img
+              class="aspect-square object-cover"
+              loading="lazy"
+              alt="Z Kei Itoch w Kioi Hall, Lipiec 2019 r."
+              src="assets/imgs/galeria/Z Kei Itoch w Kioi Hall, Lipiec 2019 r..jpeg"
+            />
+          </a>
+          <a
+            title="Z Pawłem Szymańskim i Kazimierzem Kordem podczas nagrań w Filharmonii Narodowej, czerwiec 1998 r."
+            href="assets/imgs/galeria/Z Pawłem Szymańskim i Kazimierzem Kordem podczas nagrań w Filharmonii Narodowej, czerwiec 1998 r..png"
+          >
+            <img
+              class="aspect-square object-cover"
+              loading="lazy"
+              alt="Z Pawłem Szymańskim i Kazimierzem Kordem podczas nagrań w Filharmonii Narodowej, czerwiec 1998 r."
+              src="assets/imgs/galeria/Z Pawłem Szymańskim i Kazimierzem Kordem podczas nagrań w Filharmonii Narodowej, czerwiec 1998 r..png"
+            />
+          </a>
+          <a
+            title="Z serdecznym przyjacielem od czasów Konkursu, Dang Thai Sonem"
+            href="assets/imgs/galeria/Z-serdecznym-przyjacielem.jpeg"
+          >
+            <img
+              class="aspect-square object-cover"
+              loading="lazy"
+              alt="Z serdecznym przyjacielem od czasów Konkursu, Dang Thai Sonem"
+              src="assets/imgs/galeria/Z-serdecznym-przyjacielem.jpeg"
+            />
+          </a>
+          <a
+            title="Z serdecznym przyjacielem, Dang Thai Sonem"
+            href="assets/imgs/galeria/Z serdecznym przyjacielem, Dang Thai Sonem.jpeg"
+          >
+            <img
+              class="aspect-square object-cover"
+              loading="lazy"
+              alt="Z serdecznym przyjacielem, Dang Thai Sonem"
+              src="assets/imgs/galeria/Z serdecznym przyjacielem, Dang Thai Sonem.jpeg"
+            />
+          </a>
+          <a
+            title="Ze złotym medalem po konkursie w Vercelli"
+            href="assets/imgs/galeria/Ze złotym medalem po konkursie w Vercelli.jpg"
+          >
+            <img
+              class="aspect-square object-cover"
+              loading="lazy"
+              alt="Ze złotym medalem po konkursie w Vercelli"
+              src="assets/imgs/galeria/Ze złotym medalem po konkursie w Vercelli.jpg"
+            />
+          </a>
 
-    <section class="py-20 bg-primary-100" id="dyskografia">
-        <div class="container mx-auto p-10 bg-white">
-          <h2 class="mb-6 text-5xl text-primary-500">Galeria</h2>
-          <div class="grid grid-cols-4 md:grid-cols-6 gap-5 pt-10" id="lightgallery">
-  
-            <a title="Gdańsk, 1978/1979 r." href="assets/imgs/galeria/Gdańsk, 1978:1979 r..jpeg">
-                <img class="aspect-square object-cover" loading="lazy" alt="Gdańsk, 1978/1979 r." src="assets/imgs/galeria/Gdańsk, 1978:1979 r..jpeg" />
-              </a>
-              <a title="Gdańsk, nieopodal Kaplicy Królewskiej i  Kościoła Mariackiego, 1979/1978 r." href="assets/imgs/galeria/gdansk-niopodal.jpeg">
-                <img class="aspect-square object-cover" loading="lazy" alt="Gdańsk, nieopodal Kaplicy Królewskiej i  Kościoła Mariackiego, 1979:1978 r." src="assets/imgs/galeria/gdansk-niopodal.jpeg" />
-              </a>
-              <a title="Kazimierz Kord wręcza dyplom laureata, październik 1980 r." href="assets/imgs/galeria/Kazimierz-Kord.jpeg">
-                <img class="aspect-square object-cover" loading="lazy" alt="Kazimierz Kord wręcza dyplom laureata, październik 1980 r." src="assets/imgs/galeria/Kazimierz-Kord.jpeg" />
-              </a>
-              <a title="Koncert w Filharmonii Bałtyckiej w Gdańsku, grudzień 2018 r." href="assets/imgs/galeria/Koncert-w-Filharmonii.jpeg">
-                <img class="aspect-square object-cover" loading="lazy" alt="Koncert w Filharmonii Bałtyckiej w Gdańsku, grudzień 2018 r." src="assets/imgs/galeria/Koncert-w-Filharmonii.jpeg" />
-              </a>
-              <a title="Laureaci 10. Międzynarodowego Konkursu Pianistycznego im. Fryderyka Chopina w Warszawie" href="assets/imgs/galeria/Laureaci 10. Międzynarodowego Konkursu Pianistycznego im. Fryderyka Chopina w Warszawie, 1980 .jpeg">
-                <img class="aspect-square object-cover" loading="lazy" alt="Laureaci 10. Międzynarodowego Konkursu Pianistycznego im. Fryderyka Chopina w Warszawie" src="assets/imgs/galeria/Laureaci 10. Międzynarodowego Konkursu Pianistycznego im. Fryderyka Chopina w Warszawie, 1980 .jpeg" />
-              </a>
-              <a title="Po koncercie inauguracyjnym 4. Festiwalu Chopin i jego Europa" href="assets/imgs/galeria/Po koncercie inauguracyjnym 4. Festiwalu Chopin i jego Europa.jpeg">
-                <img class="aspect-square object-cover" loading="lazy" alt="Po koncercie inauguracyjnym 4. Festiwalu Chopin i jego Europa" src="assets/imgs/galeria/Po koncercie inauguracyjnym 4. Festiwalu Chopin i jego Europa.jpeg" />
-              </a>
-              <a title="Po próbie przed recitalem w Filharmonii Narodowej, Warszawa, listopad 2017 r." href="assets/imgs/galeria/Po probie przed recitalem w Filharmonii  Narodowej, Warszawa, listopad 2017 r..jpeg">
-                <img class="aspect-square object-cover" loading="lazy" alt="Po próbie przed recitalem w Filharmonii Narodowej, Warszawa, listopad 2017 r." src="assets/imgs/galeria/Po probie przed recitalem w Filharmonii  Narodowej, Warszawa, listopad 2017 r..jpeg" />
-              </a>
-              <a title="Po recitalu w Martigny, z Alexis Golovin, Marta ̨ Argerich, Akiko Ebi, październik 2018 r." href="assets/imgs/galeria/Po-recitalu.jpeg">
-                <img class="aspect-square object-cover" loading="lazy" alt="Po recitalu w Martigny, z Alexis Golovin, Marta ̨ Argerich, Akiko Ebi, październik 2018 r." src="assets/imgs/galeria/Po-recitalu.jpeg" />
-              </a>
-              <a title="Podczas lekcji mistrzowskich z Conradem Hansenem, 1981-1982" href="assets/imgs/galeria/Podczas lekcji mistrzowskich z Conradem Hansenem, 1981-1982.jpeg">
-                <img class="aspect-square object-cover" loading="lazy" alt="Podczas lekcji mistrzowskich z Conradem Hansenem, 1981-1982" src="assets/imgs/galeria/Podczas lekcji mistrzowskich z Conradem Hansenem, 1981-1982.jpeg" />
-              </a>
-              <a title="Podczas próby z Maestro Kazimierzem Kordem" href="assets/imgs/galeria/Podczas-proby.jpeg">
-                <img class="aspect-square object-cover" loading="lazy" alt="Podczas próby z Maestro Kazimierzem Kordem" src="assets/imgs/galeria/Podczas-proby.jpeg" />
-              </a>
-              <a title="Próba z Maestro Kazimierzem Kordem" href="assets/imgs/galeria/Próba z Maestro Kazimierzem Kordem.jpeg">
-                <img class="aspect-square object-cover" loading="lazy" alt="Próba z Maestro Kazimierzem Kordem" src="assets/imgs/galeria/Próba z Maestro Kazimierzem Kordem.jpeg" />
-              </a>
-              <a title="Przesłuchania do 10. Międzynarodowego Konkursu Pianistycznego im. Fryderyka Chopina w Warszawie, 1980 r." href="assets/imgs/galeria/Przesłuchania do 10. Miedzy narodowego Konkursu Pianistycznego im. Fryderyka Chopina w Warszawie, 1980 r.jpg">
-                <img class="aspect-square object-cover" loading="lazy" alt="Przesłuchania do 10. Międzynarodowego Konkursu Pianistycznego im. Fryderyka Chopina w Warszawie, 1980 r." src="assets/imgs/galeria/Przesłuchania do 10. Miedzy narodowego Konkursu Pianistycznego im. Fryderyka Chopina w Warszawie, 1980 r.jpg" />
-              </a>
-              <a title="Recital w Bunka Kaikan, Tokio, październik 2018 r." href="assets/imgs/galeria/Recital-Bunka.jpeg">
-                <img class="aspect-square object-cover" loading="lazy" alt="Recital w Bunka Kaikan, Tokio, październik 2018 r." src="assets/imgs/galeria/Recital-Bunka.jpeg" />
-              </a>
-              <a title="Recital w Radziejowicach, grudzień 2018 r." href="assets/imgs/galeria/Recital-Radziejowicach.jpeg">
-                <img class="aspect-square object-cover" loading="lazy" alt="Recital w Radziejowicach, grudzień 2018 r." src="assets/imgs/galeria/Recital-Radziejowicach.jpeg" />
-              </a>
-              <a title="Recital z Dang Thai Sonem, 6. Festiwal Chopin i jego Europa" href="assets/imgs/galeria/Recital z Dang Thai Sonem, 6. Festiwal Chopin i jego Europa.jpeg">
-                <img class="aspect-square object-cover" loading="lazy" alt="Recital z Dang Thai Sonem, 6. Festiwal Chopin i jego Europa" src="assets/imgs/galeria/Recital z Dang Thai Sonem, 6. Festiwal Chopin i jego Europa.jpeg" />
-              </a>
-              <a title="Sopot, 1962 r. Początki." href="assets/imgs/galeria/Sopot-1962.png">
-                <img class="aspect-square object-cover" loading="lazy" alt="Sopot, 1962 r. Początki." src="assets/imgs/galeria/Sopot-1962.png" />
-              </a>
-              <a title="Trio Panufnika w Galerii Zachęta z Markiem Mosiem i Andrzejem Bauerem" href="assets/imgs/galeria/Trio Panufnika w Galerii Zacheta z M arkiem Mosiem i Andrzejem Bauerem.jpeg">
-                <img class="aspect-square object-cover" loading="lazy" alt="Trio Panufnika w Galerii Zachęta z Markiem Mosiem i Andrzejem Bauerem" src="assets/imgs/galeria/Trio Panufnika w Galerii Zacheta z M arkiem Mosiem i Andrzejem Bauerem.jpeg" />
-              </a>
-              <a title="Z Arimune Yamamoto, Gabrielą Blicharz i  Lechem Dudzikiem po sesji nagraniowej" href="assets/imgs/galeria/Z Arimune Yamamoto, Gabriela Blicharz i  Lechem Dudzikiem po sesji nagraniowej.jpeg">
-                <img class="aspect-square object-cover" loading="lazy" alt="Z Arimune Yamamoto, Gabrielą Blicharz i  Lechem Dudzikiem po sesji nagraniowej" src="assets/imgs/galeria/Z Arimune Yamamoto, Gabriela Blicharz i  Lechem Dudzikiem po sesji nagraniowej.jpeg" />
-              </a>
-              <a title="Z Chelsea Guo podczas Frost Chopin Festival, lipiec 2019 r." href="assets/imgs/galeria/Z Chelsea Guo podczas Frost Chopin Festival, lipiec 2019 r..jpeg">
-                <img class="aspect-square object-cover" loading="lazy" alt="Z Chelsea Guo podczas Frost Chopin Festival, lipiec 2019 r." src="assets/imgs/galeria/Z Chelsea Guo podczas Frost Chopin Festival, lipiec 2019 r..jpeg" />
-              </a>
-              <a title="Z Kei Itoch w Kioi Hall, Lipiec 2019 r." href="assets/imgs/galeria/Z Kei Itoch w Kioi Hall, Lipiec 2019 r..jpeg">
-                <img class="aspect-square object-cover" loading="lazy" alt="Z Kei Itoch w Kioi Hall, Lipiec 2019 r." src="assets/imgs/galeria/Z Kei Itoch w Kioi Hall, Lipiec 2019 r..jpeg" />
-              </a>
-              <a title="Z Pawłem Szymańskim i Kazimierzem Kordem podczas nagrań w Filharmonii Narodowej, czerwiec 1998 r." href="assets/imgs/galeria/Z Pawłem Szymańskim i Kazimierzem Kordem podczas nagrań w Filharmonii Narodowej, czerwiec 1998 r..png">
-                <img class="aspect-square object-cover" loading="lazy" alt="Z Pawłem Szymańskim i Kazimierzem Kordem podczas nagrań w Filharmonii Narodowej, czerwiec 1998 r." src="assets/imgs/galeria/Z Pawłem Szymańskim i Kazimierzem Kordem podczas nagrań w Filharmonii Narodowej, czerwiec 1998 r..png" />
-              </a>
-              <a title="Z serdecznym przyjacielem od czasów Konkursu, Dang Thai Sonem" href="assets/imgs/galeria/Z-serdecznym-przyjacielem.jpeg">
-                <img class="aspect-square object-cover" loading="lazy" alt="Z serdecznym przyjacielem od czasów Konkursu, Dang Thai Sonem" src="assets/imgs/galeria/Z-serdecznym-przyjacielem.jpeg" />
-              </a>
-              <a title="Z serdecznym przyjacielem, Dang Thai Sonem" href="assets/imgs/galeria/Z serdecznym przyjacielem, Dang Thai Sonem.jpeg">
-                <img class="aspect-square object-cover" loading="lazy" alt="Z serdecznym przyjacielem, Dang Thai Sonem" src="assets/imgs/galeria/Z serdecznym przyjacielem, Dang Thai Sonem.jpeg" />
-              </a>
-              <a title="Ze złotym medalem po konkursie w Vercelli" href="assets/imgs/galeria/Ze złotym medalem po konkursie w Vercelli.jpg">
-                <img class="aspect-square object-cover" loading="lazy" alt="Ze złotym medalem po konkursie w Vercelli" src="assets/imgs/galeria/Ze złotym medalem po konkursie w Vercelli.jpg" />
-              </a>
-              
+          <a
+            title="fot. B. Barczyk"
+            href="assets/imgs/galeria2/EWA_POBLOCKA_PHOTOS_BARCZYK-197.jpg"
+          >
+            <img
+              class="aspect-square object-cover"
+              loading="lazy"
+              alt="fot. B. Barczyk"
+              src="assets/imgs/galeria2/EWA_POBLOCKA_PHOTOS_BARCZYK-197.jpg"
+            />
+          </a>
+          <a
+            title="fot. B. Barczyk"
+            href="assets/imgs/galeria2/EWA_POBLOCKA_PHOTOS_BARCZYK-204.jpg"
+          >
+            <img
+              class="aspect-square object-cover"
+              loading="lazy"
+              alt="fot. B. Barczyk"
+              src="assets/imgs/galeria2/EWA_POBLOCKA_PHOTOS_BARCZYK-204.jpg"
+            />
+          </a>
+          <a
+            title="fot. B. Barczyk"
+            href="assets/imgs/galeria2/EWA_POBLOCKA_PHOTOS_BARCZYK-208.jpg"
+          >
+            <img
+              class="aspect-square object-cover"
+              loading="lazy"
+              alt="fot. B. Barczyk"
+              src="assets/imgs/galeria2/EWA_POBLOCKA_PHOTOS_BARCZYK-208.jpg"
+            />
+          </a>
+          <a
+            title="fot. B. Barczyk"
+            href="assets/imgs/galeria2/EWA_POBLOCKA_PHOTOS_BARCZYK-210.jpg"
+          >
+            <img
+              class="aspect-square object-cover"
+              loading="lazy"
+              alt="fot. B. Barczyk"
+              src="assets/imgs/galeria2/EWA_POBLOCKA_PHOTOS_BARCZYK-210.jpg"
+            />
+          </a>
+          <a
+            title="fot. B. Barczyk"
+            href="assets/imgs/galeria2/EWA_POBLOCKA_PHOTOS_BARCZYK-221.jpg"
+          >
+            <img
+              class="aspect-square object-cover"
+              loading="lazy"
+              alt="fot. B. Barczyk"
+              src="assets/imgs/galeria2/EWA_POBLOCKA_PHOTOS_BARCZYK-221.jpg"
+            />
+          </a>
+          <a
+            title="fot. B. Barczyk"
+            href="assets/imgs/galeria2/EWA_POBLOCKA_PHOTOS_BARCZYK-229.jpg"
+          >
+            <img
+              class="aspect-square object-cover"
+              loading="lazy"
+              alt="fot. B. Barczyk"
+              src="assets/imgs/galeria2/EWA_POBLOCKA_PHOTOS_BARCZYK-229.jpg"
+            />
+          </a>
+          <a
+            title="fot. B. Barczyk"
+            href="assets/imgs/galeria2/EWA_POBLOCKA_PHOTOS_BARCZYK-255.jpg"
+          >
+            <img
+              class="aspect-square object-cover"
+              loading="lazy"
+              alt="fot. B. Barczyk"
+              src="assets/imgs/galeria2/EWA_POBLOCKA_PHOTOS_BARCZYK-255.jpg"
+            />
+          </a>
+          <a
+            title="fot. B. Barczyk"
+            href="assets/imgs/galeria2/EWA_POBLOCKA_PHOTOS_BARCZYK-257.jpg"
+          >
+            <img
+              class="aspect-square object-cover"
+              loading="lazy"
+              alt="fot. B. Barczyk"
+              src="assets/imgs/galeria2/EWA_POBLOCKA_PHOTOS_BARCZYK-257.jpg"
+            />
+          </a>
+          <a
+            title="fot. B. Barczyk"
+            href="assets/imgs/galeria2/EWA_POBLOCKA_PHOTOS_BARCZYK-259.jpg"
+          >
+            <img
+              class="aspect-square object-cover"
+              loading="lazy"
+              alt="fot. B. Barczyk"
+              src="assets/imgs/galeria2/EWA_POBLOCKA_PHOTOS_BARCZYK-259.jpg"
+            />
+          </a>
+          <a
+            title="fot. B. Barczyk"
+            href="assets/imgs/galeria2/EWA_POBLOCKA_PHOTOS_BARCZYK-272.jpg"
+          >
+            <img
+              class="aspect-square object-cover"
+              loading="lazy"
+              alt="fot. B. Barczyk"
+              src="assets/imgs/galeria2/EWA_POBLOCKA_PHOTOS_BARCZYK-272.jpg"
+            />
+          </a>
+          <a
+            title="fot. B. Barczyk"
+            href="assets/imgs/galeria2/EWA_POBLOCKA_PHOTOS_BARCZYK-273.jpg"
+          >
+            <img
+              class="aspect-square object-cover"
+              loading="lazy"
+              alt="fot. B. Barczyk"
+              src="assets/imgs/galeria2/EWA_POBLOCKA_PHOTOS_BARCZYK-273.jpg"
+            />
+          </a>
+          <a
+            title="fot. B. Barczyk"
+            href="assets/imgs/galeria2/EWA_POBLOCKA_PHOTOS_BARCZYK-274.jpg"
+          >
+            <img
+              class="aspect-square object-cover"
+              loading="lazy"
+              alt="fot. B. Barczyk"
+              src="assets/imgs/galeria2/EWA_POBLOCKA_PHOTOS_BARCZYK-274.jpg"
+            />
+          </a>
+          <a
+            title="fot. B. Barczyk"
+            href="assets/imgs/galeria2/EWA_POBLOCKA_PHOTOS_BARCZYK-277.jpg"
+          >
+            <img
+              class="aspect-square object-cover"
+              loading="lazy"
+              alt="fot. B. Barczyk"
+              src="assets/imgs/galeria2/EWA_POBLOCKA_PHOTOS_BARCZYK-277.jpg"
+            />
+          </a>
+          <a
+            title="fot. B. Barczyk"
+            href="assets/imgs/galeria2/EWA_POBLOCKA_PHOTOS_BARCZYK-278.jpg"
+          >
+            <img
+              class="aspect-square object-cover"
+              loading="lazy"
+              alt="fot. B. Barczyk"
+              src="assets/imgs/galeria2/EWA_POBLOCKA_PHOTOS_BARCZYK-278.jpg"
+            />
+          </a>
+          <a
+            title="fot. B. Barczyk"
+            href="assets/imgs/galeria2/EWA_POBLOCKA_PHOTOS_BARCZYK-304.jpg"
+          >
+            <img
+              class="aspect-square object-cover"
+              loading="lazy"
+              alt="fot. B. Barczyk"
+              src="assets/imgs/galeria2/EWA_POBLOCKA_PHOTOS_BARCZYK-304.jpg"
+            />
+          </a>
+          <a
+            title="fot. B. Barczyk"
+            href="assets/imgs/galeria2/EWA_POBLOCKA_PHOTOS_BARCZYK-314.jpg"
+          >
+            <img
+              class="aspect-square object-cover"
+              loading="lazy"
+              alt="fot. B. Barczyk"
+              src="assets/imgs/galeria2/EWA_POBLOCKA_PHOTOS_BARCZYK-314.jpg"
+            />
+          </a>
+          <a
+            title="fot. B. Barczyk"
+            href="assets/imgs/galeria2/EWA_POBLOCKA_PHOTOS_BARCZYK-333.jpg"
+          >
+            <img
+              class="aspect-square object-cover"
+              loading="lazy"
+              alt="fot. B. Barczyk"
+              src="assets/imgs/galeria2/EWA_POBLOCKA_PHOTOS_BARCZYK-333.jpg"
+            />
+          </a>
+          <a
+            title="fot. B. Barczyk"
+            href="assets/imgs/galeria2/EWA_POBLOCKA_PHOTOS_BARCZYK-334.jpg"
+          >
+            <img
+              class="aspect-square object-cover"
+              loading="lazy"
+              alt="fot. B. Barczyk"
+              src="assets/imgs/galeria2/EWA_POBLOCKA_PHOTOS_BARCZYK-334.jpg"
+            />
+          </a>
+          <a
+            title="fot. B. Barczyk"
+            href="assets/imgs/galeria2/EWA_POBLOCKA_PHOTOS_BARCZYK-363.jpg"
+          >
+            <img
+              class="aspect-square object-cover"
+              loading="lazy"
+              alt="fot. B. Barczyk"
+              src="assets/imgs/galeria2/EWA_POBLOCKA_PHOTOS_BARCZYK-363.jpg"
+            />
+          </a>
+          <a
+            title="fot. B. Barczyk"
+            href="assets/imgs/galeria2/EWA_POBLOCKA_PHOTOS_BARCZYK-366.jpg"
+          >
+            <img
+              class="aspect-square object-cover"
+              loading="lazy"
+              alt="fot. B. Barczyk"
+              src="assets/imgs/galeria2/EWA_POBLOCKA_PHOTOS_BARCZYK-366.jpg"
+            />
+          </a>
+        </div>
+      </div>
+    </section>
 
+    <section class="bg-primary-100 py-20" id="kontakt">
+      <div class="container mx-auto bg-white p-10 text-center">
+        <h2 class="mb-6 text-5xl text-primary-500">Kontakt</h2>
+        <p class="mx-auto max-w-4xl text-lg">
+          <strong class="text-stone-900">Zapraszamy do kontaktu</strong> – Dla
+          organizatorów koncertów, uczestników kursów mistrzowskich oraz
+          wszystkich zainteresowanych współpracą lub uzyskaniem dodatkowych
+          informacji.
+        </p>
 
-              <a title="fot. B. Barczyk" href="assets/imgs/galeria2/EWA_POBLOCKA_PHOTOS_BARCZYK-197.jpg">
-                <img class="aspect-square object-cover" loading="lazy" alt="fot. B. Barczyk" src="assets/imgs/galeria2/EWA_POBLOCKA_PHOTOS_BARCZYK-197.jpg" />
-              </a>
-              <a title="fot. B. Barczyk" href="assets/imgs/galeria2/EWA_POBLOCKA_PHOTOS_BARCZYK-204.jpg">
-                <img class="aspect-square object-cover" loading="lazy" alt="fot. B. Barczyk" src="assets/imgs/galeria2/EWA_POBLOCKA_PHOTOS_BARCZYK-204.jpg" />
-              </a>
-              <a title="fot. B. Barczyk" href="assets/imgs/galeria2/EWA_POBLOCKA_PHOTOS_BARCZYK-208.jpg">
-                <img class="aspect-square object-cover" loading="lazy" alt="fot. B. Barczyk" src="assets/imgs/galeria2/EWA_POBLOCKA_PHOTOS_BARCZYK-208.jpg" />
-              </a>
-              <a title="fot. B. Barczyk" href="assets/imgs/galeria2/EWA_POBLOCKA_PHOTOS_BARCZYK-210.jpg">
-                <img class="aspect-square object-cover" loading="lazy" alt="fot. B. Barczyk" src="assets/imgs/galeria2/EWA_POBLOCKA_PHOTOS_BARCZYK-210.jpg" />
-              </a>
-              <a title="fot. B. Barczyk" href="assets/imgs/galeria2/EWA_POBLOCKA_PHOTOS_BARCZYK-221.jpg">
-                <img class="aspect-square object-cover" loading="lazy" alt="fot. B. Barczyk" src="assets/imgs/galeria2/EWA_POBLOCKA_PHOTOS_BARCZYK-221.jpg" />
-              </a>
-              <a title="fot. B. Barczyk" href="assets/imgs/galeria2/EWA_POBLOCKA_PHOTOS_BARCZYK-229.jpg">
-                <img class="aspect-square object-cover" loading="lazy" alt="fot. B. Barczyk" src="assets/imgs/galeria2/EWA_POBLOCKA_PHOTOS_BARCZYK-229.jpg" />
-              </a>
-              <a title="fot. B. Barczyk" href="assets/imgs/galeria2/EWA_POBLOCKA_PHOTOS_BARCZYK-255.jpg">
-                <img class="aspect-square object-cover" loading="lazy" alt="fot. B. Barczyk" src="assets/imgs/galeria2/EWA_POBLOCKA_PHOTOS_BARCZYK-255.jpg" />
-              </a>
-              <a title="fot. B. Barczyk" href="assets/imgs/galeria2/EWA_POBLOCKA_PHOTOS_BARCZYK-257.jpg">
-                <img class="aspect-square object-cover" loading="lazy" alt="fot. B. Barczyk" src="assets/imgs/galeria2/EWA_POBLOCKA_PHOTOS_BARCZYK-257.jpg" />
-              </a>
-              <a title="fot. B. Barczyk" href="assets/imgs/galeria2/EWA_POBLOCKA_PHOTOS_BARCZYK-259.jpg">
-                <img class="aspect-square object-cover" loading="lazy" alt="fot. B. Barczyk" src="assets/imgs/galeria2/EWA_POBLOCKA_PHOTOS_BARCZYK-259.jpg" />
-              </a>
-              <a title="fot. B. Barczyk" href="assets/imgs/galeria2/EWA_POBLOCKA_PHOTOS_BARCZYK-272.jpg">
-                <img class="aspect-square object-cover" loading="lazy" alt="fot. B. Barczyk" src="assets/imgs/galeria2/EWA_POBLOCKA_PHOTOS_BARCZYK-272.jpg" />
-              </a>
-              <a title="fot. B. Barczyk" href="assets/imgs/galeria2/EWA_POBLOCKA_PHOTOS_BARCZYK-273.jpg">
-                <img class="aspect-square object-cover" loading="lazy" alt="fot. B. Barczyk" src="assets/imgs/galeria2/EWA_POBLOCKA_PHOTOS_BARCZYK-273.jpg" />
-              </a>
-              <a title="fot. B. Barczyk" href="assets/imgs/galeria2/EWA_POBLOCKA_PHOTOS_BARCZYK-274.jpg">
-                <img class="aspect-square object-cover" loading="lazy" alt="fot. B. Barczyk" src="assets/imgs/galeria2/EWA_POBLOCKA_PHOTOS_BARCZYK-274.jpg" />
-              </a>
-              <a title="fot. B. Barczyk" href="assets/imgs/galeria2/EWA_POBLOCKA_PHOTOS_BARCZYK-277.jpg">
-                <img class="aspect-square object-cover" loading="lazy" alt="fot. B. Barczyk" src="assets/imgs/galeria2/EWA_POBLOCKA_PHOTOS_BARCZYK-277.jpg" />
-              </a>
-              <a title="fot. B. Barczyk" href="assets/imgs/galeria2/EWA_POBLOCKA_PHOTOS_BARCZYK-278.jpg">
-                <img class="aspect-square object-cover" loading="lazy" alt="fot. B. Barczyk" src="assets/imgs/galeria2/EWA_POBLOCKA_PHOTOS_BARCZYK-278.jpg" />
-              </a>
-              <a title="fot. B. Barczyk" href="assets/imgs/galeria2/EWA_POBLOCKA_PHOTOS_BARCZYK-304.jpg">
-                <img class="aspect-square object-cover" loading="lazy" alt="fot. B. Barczyk" src="assets/imgs/galeria2/EWA_POBLOCKA_PHOTOS_BARCZYK-304.jpg" />
-              </a>
-              <a title="fot. B. Barczyk" href="assets/imgs/galeria2/EWA_POBLOCKA_PHOTOS_BARCZYK-314.jpg">
-                <img class="aspect-square object-cover" loading="lazy" alt="fot. B. Barczyk" src="assets/imgs/galeria2/EWA_POBLOCKA_PHOTOS_BARCZYK-314.jpg" />
-              </a>
-              <a title="fot. B. Barczyk" href="assets/imgs/galeria2/EWA_POBLOCKA_PHOTOS_BARCZYK-333.jpg">
-                <img class="aspect-square object-cover" loading="lazy" alt="fot. B. Barczyk" src="assets/imgs/galeria2/EWA_POBLOCKA_PHOTOS_BARCZYK-333.jpg" />
-              </a>
-              <a title="fot. B. Barczyk" href="assets/imgs/galeria2/EWA_POBLOCKA_PHOTOS_BARCZYK-334.jpg">
-                <img class="aspect-square object-cover" loading="lazy" alt="fot. B. Barczyk" src="assets/imgs/galeria2/EWA_POBLOCKA_PHOTOS_BARCZYK-334.jpg" />
-              </a>
-              <a title="fot. B. Barczyk" href="assets/imgs/galeria2/EWA_POBLOCKA_PHOTOS_BARCZYK-363.jpg">
-                <img class="aspect-square object-cover" loading="lazy" alt="fot. B. Barczyk" src="assets/imgs/galeria2/EWA_POBLOCKA_PHOTOS_BARCZYK-363.jpg" />
-              </a>
-              <a title="fot. B. Barczyk" href="assets/imgs/galeria2/EWA_POBLOCKA_PHOTOS_BARCZYK-366.jpg">
-                <img class="aspect-square object-cover" loading="lazy" alt="fot. B. Barczyk" src="assets/imgs/galeria2/EWA_POBLOCKA_PHOTOS_BARCZYK-366.jpg" />
-              </a>
-              
-              
-            
-          
+        <div class="grid grid-cols-1 gap-4 pt-12 md:grid-cols-2">
+          <div>
+            <h3 class="text-xl font-bold">Mateusz Hyży</h3>
+            <a href="mailto:mateusz.hyzy@icloud.com" class="text-primary-500"
+              >mateusz.hyzy@icloud.com</a
+            ><br />
+            <a href="tel:+48507139432" class="text-primary-500"
+              >tel. 507 139 432</a
+            >
+          </div>
+
+          <div>
+            <a href="mailto:prof.epoblocka@yahoo.com" class="text-primary-500"
+              >prof.epoblocka@yahoo.com</a
+            >
           </div>
         </div>
-      </section>
-
-
-      <section class="py-20 bg-primary-100" id="kontakt">
-        <div class="container mx-auto p-10 bg-white text-center">
-          <h2 class="mb-6 text-5xl text-primary-500">Kontakt</h2>
-          <p class="text-lg max-w-4xl mx-auto">
-            <strong class="text-stone-900">Zapraszamy do kontaktu</strong>  – Dla organizatorów koncertów, uczestników kursów mistrzowskich oraz wszystkich zainteresowanych współpracą lub uzyskaniem dodatkowych informacji.
-          </p>
-          <div class="grid grid-cols-1 md:grid-cols-3 gap-4 pt-12">
-            <div>
-              <h3 class="font-bold text-xl">Marcin Gorayski</h3>
-              <p>Agencja Artystyczna enterMezzo</p>
-              <a href="mailto:entermezzo@op.pl" class="text-primary-500">entermezzo@op.pl</a><br>
-              <a href="tel:+48500659199" class="text-primary-500">tel. 500 659 199</a>
-            </div>
-  
-            <div>
-              <h3 class="font-bold text-xl">Mateusz Hyży</h3>
-              <a href="mailto:mateusz.hyzy@icloud.com" class="text-primary-500">mateusz.hyzy@icloud.com</a><br>
-              <a href="tel:+48507139432" class="text-primary-500">tel. 507 139 432</a>
-            </div>
-        
-            <div>
-              <h3 class="font-bold text-xl">Kontakt dla studentów</h3>
-              <a href="mailto:prof.epoblocka@yahoo.com" class="text-primary-500">prof.epoblocka@yahoo.com</a>
-            </div>
-          </div>
-          
-        </div>
-      </section>
-
+      </div>
+    </section>
 
     <footer class="py-6">
-      <div class="container px-4 mx-auto">
-        <div class="flex justify-between items-end text-sm">
+      <div class="container mx-auto px-4">
+        <div class="flex items-end justify-between text-sm">
           <p>Copyright ©2024 Ewa Pobłocka. All Rights Reserved.</p>
           <p>Zdjęcia - Bartek Barczyk</p>
         </div>
